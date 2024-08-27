@@ -22,7 +22,7 @@ import '../styles/global.css'
               <div class="left">
                 <h1>Xu Kai <span>( 许凯
                   )</span></h1>
-                <h2>Chinese Actor</h2>
+                <!-- <h2>Chinese Actor</h2> -->
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dignissimos aut atque saepe minus repellendus voluptate veritatis repellat maiores vel!</p>
                 <div class="filmography">
                   <div class="rect">
@@ -51,7 +51,7 @@ import '../styles/global.css'
 
 <style>
   .landing {
-    height: 100dvh;
+    min-height: 100dvh;
     
   }
 
@@ -84,7 +84,7 @@ import '../styles/global.css'
     font-size: clamp(2rem, 10vw, 2rem)
   }
   .left  > p {
-    margin-inline-start: 4rem;
+   
     line-height: 1.4rem;
     text-align: center;
   }
@@ -112,4 +112,19 @@ import '../styles/global.css'
     align-items: end;
    
   }
+
+  @media only screen and (max-width: 786px) {
+    .box {
+    flex-direction: column-reverse;
+  }
+  
+  .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .filmography {
+    margin-top: 1rem;
+  }
+}
 </style>
