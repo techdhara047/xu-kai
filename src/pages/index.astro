@@ -68,10 +68,9 @@ import Carousel from "../components/Carousel.astro";
           </figure>
         </div>
       </section>
-      <!-- <header></header>
-      <div class="main">
-        <Tabs client:visible />
-      </div> -->
+      <div class="carousel">
+        <Carousel />
+      </div>
     </div>
   </body>
 </html>
@@ -149,7 +148,7 @@ import Carousel from "../components/Carousel.astro";
     font-size: clamp(2rem, 10vw, 5rem);
   }
   .left h1 > span {
-    font-size: 0.5em;
+    font-size: clamp(0.2em, 5vw, 0.5em);
   }
   .left h2 {
     font-size: clamp(2rem, 10vw, 2rem);
@@ -202,6 +201,9 @@ import Carousel from "../components/Carousel.astro";
   .main {
     height: 150dvh;
   }
+  .carousel {
+    display: none;
+  }
 
   @media only screen and (max-width: 786px) {
     .landing {
@@ -211,6 +213,7 @@ import Carousel from "../components/Carousel.astro";
       flex-direction: column-reverse;
     }
     .right {
+      position: relative;
     }
     .right img {
       width: 75%;
@@ -231,6 +234,29 @@ import Carousel from "../components/Carousel.astro";
     }
     .social-links {
       display: none;
+    }
+    .banner {
+      display: none;
+    }
+    .right::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 20%,
+        transparent 60%,
+        rgba(38, 40, 39, 0.8) 80%,
+        rgba(38, 40, 39, 1) 100%
+      );
+    }
+    .carousel {
+      height: 250px;
+      display: block;
     }
   }
 </style>
