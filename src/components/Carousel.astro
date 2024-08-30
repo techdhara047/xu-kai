@@ -1,0 +1,105 @@
+---
+import { Image } from "astro:assets";
+import banner1 from "../assets/img/banner1.webp";
+import banner2 from "../assets/img/banner2.webp";
+import banner3 from "../assets/img/banner3.jpg";
+import banner4 from "../assets/img/banner4.webp";
+import banner5 from "../assets/img/banner5.webp";
+import banner6 from "../assets/img/banner6.webp";
+import banner7 from "../assets/img/banner7.webp";
+import banner8 from "../assets/img/banner8.webp";
+import banner9 from "../assets/img/banner9.webp";
+import banner10 from "../assets/img/banner10.webp";
+import banner11 from "../assets/img/banner11.webp";
+import banner12 from "../assets/img/banner12.webp";
+import banner13 from "../assets/img/banner13.jpg";
+import banner14 from "../assets/img/banner14.png";
+import banner16 from "../assets/img/banner16.webp";
+
+const images = [
+  banner1,
+  banner2,
+  banner3,
+  banner4,
+  banner5,
+  banner6,
+  banner7,
+  banner8,
+  banner9,
+  banner10,
+  banner11,
+  banner12,
+  banner13,
+  banner14,
+  banner16,
+];
+---
+
+<figure>
+  {
+    images.map((img) => (
+      <Image src={img} alt="banner" class="image" format="avif" />
+    ))
+  }
+</figure>
+
+<style>
+  figure {
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: inherit;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 1s;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+  .fade-out {
+    opacity: 0;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".image");
+    const totalImages = images.length;
+    let currentIndex = Math.floor(Math.random() * totalImages); // Randomly select initial index
+    const transitionDelay = 10000; // Total delay for each image transition (4 seconds)
+    const fadeDuration = 1000; // Duration of fade in and out (1 second)
+
+    function showNextImage() {
+      console.log("running", currentIndex, currentIndex, new Date());
+
+      // Fade out the current image
+      images[currentIndex].classList.remove("fade-in");
+      images[currentIndex].classList.add("fade-out");
+
+      // Move to the next image
+      currentIndex = (currentIndex + 1) % images.length;
+
+      // Fade in the next image
+      images[currentIndex].classList.remove("fade-out");
+      images[currentIndex].classList.add("fade-in");
+
+      // Set timeout to manage the total delay including fade duration
+      setTimeout(showNextImage, transitionDelay);
+    }
+
+    // Initialize the first image
+    images[currentIndex].classList.add("fade-in");
+
+    // Start the transition sequence
+    setTimeout(showNextImage, transitionDelay);
+  });
+</script>
