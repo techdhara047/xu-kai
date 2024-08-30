@@ -1,0 +1,38 @@
+{
+  "title": "Ancient Love Poetry",
+  "useStatus": 0,
+  "releasedstatus": "2021-07-17",
+  "description": "A Chinese drama series that explores the romantic and adventurous journey of individuals in a magical realm, discovering love and friendship along the way.",
+  "banner": {
+    "high": "../../assets/img/banner/high/banner2.webp",
+    "medium": "../../assets/img/banner/medium/banner2.webp",
+    "low": "../../assets/img/banner/low/banner2.webp"
+  },
+  "rating": 8.9,
+  "isBanner": true,
+  "type": 0,
+  "watchlinks": [
+    {
+      "name": "Watch on iQIYI",
+      "link": "https://www.iq.com/play/20r9k1a9z1"
+    },
+    {
+      "name": "Watch on Youku",
+      "link": "https://www.youku.com/show_page/id_z7c9b4e7b0c711e9a19b2c7e9b"
+    }
+  ],
+  "casts": [
+    {
+      "name": "Zhao Lusi",
+      "role": "Jiang Liyun"
+    },
+    {
+      "name": "Chen Xingxu",
+      "role": "Huo Wei"
+    },
+    {
+      "name": "U Kai",
+      "role": "Main Lead"
+    }
+  ]
+}

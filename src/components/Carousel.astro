@@ -1,61 +1,38 @@
 ---
 import { Image } from "astro:assets";
-import banner1 from "../assets/img/banner1.webp";
-import banner2 from "../assets/img/banner2.webp";
-import banner3 from "../assets/img/banner3.jpg";
-import banner4 from "../assets/img/banner4.webp";
-import banner5 from "../assets/img/banner5.webp";
-import banner6 from "../assets/img/banner6.webp";
-import banner7 from "../assets/img/banner7.webp";
-import banner8 from "../assets/img/banner8.webp";
-import banner9 from "../assets/img/banner9.webp";
-import banner10 from "../assets/img/banner10.webp";
-import banner11 from "../assets/img/banner11.webp";
-import banner12 from "../assets/img/banner12.webp";
-import banner13 from "../assets/img/banner13.jpg";
-import banner14 from "../assets/img/banner14.png";
-import banner15 from "../assets/img/banner15.webp";
-import banner16 from "../assets/img/banner16.webp";
-import banner17 from "../assets/img/banner17.jpeg";
-import banner18 from "../assets/img/banner18.webp";
+import { getCollection } from "astro:content";
+import { getYearFromDate } from "../utils/utils.ts";
 
-const images = [
-  { img: banner1, caption: "As Beautiful As You", releaseStatus: "2024" },
-  { img: banner2, caption: "Ancient Love Poetry", releaseStatus: "2021" },
-  { img: banner3, caption: "Best Choice Ever", releaseStatus: "2024" },
-  { img: banner4, caption: "Sword and Fairy", releaseStatus: "2024" },
-  {
-    img: banner5,
-    caption: "She and Her Perpfect Husaband",
-    releaseStatus: "2022",
-  },
-  { img: banner6, caption: "Arsenal Military Academy", releaseStatus: "2019" },
-  { img: banner7, caption: "Snow Eagle Lord", releaseStatus: "2023" },
-  { img: banner8, caption: "Arsenal Military Academy", releaseStatus: "2019" },
-  { img: banner9, caption: "Wonderland of Love", releaseStatus: "2023" },
-  { img: banner10, caption: "Wonderland of Love", releaseStatus: "2023" },
-  { img: banner11, caption: "The Legends", releaseStatus: "2019" },
-  { img: banner12, caption: "Court Lady", releaseStatus: "2021" },
-  { img: banner13, caption: "Royal Feast", releaseStatus: "2022" },
-  { img: banner14, caption: "Story of Yanxi Palace", releaseStatus: "2019" },
-  { img: banner15, caption: "Moonlit Reunion ", releaseStatus: "Upcoming" },
-  { img: banner16, caption: "Falling into your smile ", releaseStatus: "2021" },
-  { img: banner17, caption: "Fire Investigator ", releaseStatus: "Filming" },
-  { img: banner18, caption: "Great Escape 6 ", releaseStatus: "Ongoing" },
-];
+const filmography = await getCollection("filmography");
 ---
 
 <div class="banner-carousel">
   {
-    images.map((item) => (
-      <figure>
-        <Image src={item.img} alt="banner" class="image" format="avif" />
-        <span class="caption">
-          {item.caption} <span class="statusDesk"> - {item.releaseStatus}</span>
-        </span>
-        <span class="status">{item.releaseStatus}</span>
-      </figure>
-    ))
+    filmography.map((item) => {
+      if (item.data.isBanner) {
+        return (
+          <figure>
+            {/* <Image src={item.img} alt="banner" class="image" format="avif" /> */}
+            <Image
+              src={item.data.banner.high}
+              widths={[240, 540, 720, item.data.banner.high.width]}
+              sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${item.data.banner.high.width}px`}
+              alt={item.data.title}
+              class="image"
+            />
+
+            <span class="caption">
+              {item.data.title}{" "}
+              <span class="statusDesk">
+                {" "}
+                - {getYearFromDate(item.data.releasedstatus)}
+              </span>
+            </span>
+            <span class="status">{item.data.releasedstatus}</span>
+          </figure>
+        );
+      }
+    })
   }
 </div>
 
@@ -125,16 +102,13 @@ const images = [
       const images = carousel.querySelectorAll("figure");
       const totalImages = images.length;
       let currentIndex = Math.floor(Math.random() * totalImages); // Randomly select initial index
-      const transitionDelay = 10000; // Total delay for each image transition (4 seconds)
+      const transitionDelay = 5000; // Total delay for each image transition (4 seconds)
       const fadeDuration = 1000; // Duration of fade in and out (1 second)
 
       function showNextImage() {
-        console.log("running", currentIndex, currentIndex, new Date());
-
         // Fade out the current image
         images[currentIndex].classList.remove("fade-in");
         images[currentIndex].classList.add("fade-out");
-        console.log(images[currentIndex].nextElementSibling);
 
         // Move to the next image
         currentIndex = (currentIndex + 1) % images.length;

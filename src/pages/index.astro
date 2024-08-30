@@ -8,6 +8,20 @@ import About from "../components/About.astro";
 import MediaLinks from "../components/MediaLinks.astro";
 import Tabs from "../components/Tabs";
 import Carousel from "../components/Carousel.astro";
+import { getCollection } from "astro:content";
+
+const filmography = await getCollection("filmography");
+const counts = {
+  0: 0,
+  1: 0,
+  2: 0,
+};
+
+filmography.forEach((item) => {
+  if (item.data.type === 0) counts[0]++;
+  if (item.data.type === 1) counts[1]++;
+  if (item.data.type === 2) counts[2]++;
+});
 ---
 
 <html lang="en">
@@ -33,6 +47,7 @@ import Carousel from "../components/Carousel.astro";
 
     <div class="container">
       <section class="landing">
+        <div class="shade"></div>
         <div class="box">
           <div class="banner">
             <div class="carousel-container">
@@ -50,15 +65,15 @@ import Carousel from "../components/Carousel.astro";
             </p>
             <div class="filmography">
               <div class="rect">
-                <h4>21</h4>
+                <h4>{counts[0]}</h4>
                 <p>TV Shows</p>
               </div>
               <div class="rect">
-                <h4>1</h4>
+                <h4>{counts[1]}</h4>
                 <p>Movies</p>
               </div>
               <div class="rect">
-                <h4>1</h4>
+                <h4>{counts[2]}</h4>
                 <p>Variety Shows</p>
               </div>
             </div>
@@ -95,6 +110,7 @@ import Carousel from "../components/Carousel.astro";
 
   .landing {
     height: 100dvh;
+    position: relative;
   }
 
   .box {
@@ -102,6 +118,7 @@ import Carousel from "../components/Carousel.astro";
     justify-content: space-around;
     height: 100%;
   }
+
   .box > * {
   }
   .banner {

@@ -1,0 +1,38 @@
+{
+  "title": "Wonderland of Love ",
+  "useStatus": 0,
+  "releasedstatus": "2023-11-06",
+  "description": "A Chinese drama series set in a fantastical world where a young man embarks on a journey of self-discovery and battles dark forces.",
+  "banner": {
+    "high": "../../assets/img/banner/high/banner9.webp",
+    "medium": "../../assets/img/banner/medium/banner9.webp",
+    "low": "../../assets/img/banner/low/banner9.webp"
+  },
+  "rating": 8.5,
+  "isBanner": true,
+  "type": 0,
+  "watchlinks": [
+    {
+      "name": "Watch on Viki",
+      "link": "https://www.viki.com/tv/36856c-the-legends"
+    },
+    {
+      "name": "Watch on iQIYI",
+      "link": "https://www.iq.com/play/20r8y1j98k"
+    }
+  ],
+  "casts": [
+    {
+      "name": "Bai Lu",
+      "role": "Li Xue"
+    },
+    {
+      "name": "Chen Xingxu",
+      "role": "Zhou Zishu"
+    },
+    {
+      "name": "U Kai",
+      "role": "Main Lead"
+    }
+  ]
+}
