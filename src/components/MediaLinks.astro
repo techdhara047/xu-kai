@@ -1,25 +1,28 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 ---
 
 <ul class="media-links">
-        
-    <!-- <li><a href="#"><Icon name="mdi:facebook" target="_blank"/> Facebook</a></li> -->
-    <li><a href="https://www.instagram.com/sosoalive7" target="_blank"><Icon name="mdi:instagram" /> Instagram</a></li>
-    <li><a href="https://weibo.cn/u/2931958713"><Icon name="mdi:sina-weibo" target="_blank"/> Weibo</a></li>
-  </ul>
+  <!-- <li><a href="#"><Icon name="mdi:facebook" target="_blank"/> Facebook</a></li> -->
+  <li>
+    <a href="https://www.instagram.com/sosoalive7" target="_blank"
+      ><Icon name="mdi:instagram" /> Instagram</a>
+  </li>
+  <li>
+    <a href="https://weibo.cn/u/2931958713" target="_blank"
+      ><Icon name="mdi:sina-weibo" /> Weibo</a>
+  </li>
+</ul>
 
-  <style>
-    
+<style>
   .media-links {
-    
     padding: 0.4rem;
     display: flex;
     flex-direction: row; /* Arrange items horizontally */
     align-items: center;
     gap: 1rem;
-   
-/* transform: translateX(-50%); */
+
+    /* transform: translateX(-50%); */
     /* transform-origin: left top;
     transform: translateX(-50%);
     rotate: 270deg; */
@@ -31,10 +34,9 @@ import { Icon } from 'astro-icon/components'
     gap: 0.2rem;
     color: inherit;
     transition: 0.2s ease-in-out;
-  
   }
   .media-links a:hover {
     color: #ff9f1a;
     transform: translateX(-5px);
   }
-  </style>
+</style>

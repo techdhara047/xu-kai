@@ -14,24 +14,32 @@ import banner11 from "../assets/img/banner11.webp";
 import banner12 from "../assets/img/banner12.webp";
 import banner13 from "../assets/img/banner13.jpg";
 import banner14 from "../assets/img/banner14.png";
+import banner15 from "../assets/img/banner15.webp";
 import banner16 from "../assets/img/banner16.webp";
+import banner17 from "../assets/img/banner17.jpeg";
 
 const images = [
-  { img: banner1, caption: "As Beautiful As You" },
-  { img: banner2, caption: "Ancient Love Poetry" },
-  { img: banner3, caption: "Best Choice Ever" },
-  { img: banner4, caption: "Sword and Fairy" },
-  { img: banner5, caption: "She and Her Perpfect Husaband" },
-  { img: banner6, caption: "Arsenal Military Academy" },
-  { img: banner7, caption: "Snow Eagle Lord" },
-  { img: banner8, caption: "Arsenal Military Academy" },
-  { img: banner9, caption: "Wonderland of Love" },
-  { img: banner10, caption: "Wonderland of Love" },
-  { img: banner11, caption: "The Legends" },
-  { img: banner12, caption: "Court Lady" },
-  { img: banner13, caption: "Royal Feast" },
-  { img: banner14, caption: "Story of Yanxi Palace" },
-  { img: banner16, caption: "Falling into your smile " },
+  { img: banner1, caption: "As Beautiful As You", releaseStatus: "2024" },
+  { img: banner2, caption: "Ancient Love Poetry", releaseStatus: "2021" },
+  { img: banner3, caption: "Best Choice Ever", releaseStatus: "2024" },
+  { img: banner4, caption: "Sword and Fairy", releaseStatus: "2024" },
+  {
+    img: banner5,
+    caption: "She and Her Perpfect Husaband",
+    releaseStatus: "2022",
+  },
+  { img: banner6, caption: "Arsenal Military Academy", releaseStatus: "2019" },
+  { img: banner7, caption: "Snow Eagle Lord", releaseStatus: "2023" },
+  { img: banner8, caption: "Arsenal Military Academy", releaseStatus: "2019" },
+  { img: banner9, caption: "Wonderland of Love", releaseStatus: "2023" },
+  { img: banner10, caption: "Wonderland of Love", releaseStatus: "2023" },
+  { img: banner11, caption: "The Legends", releaseStatus: "2019" },
+  { img: banner12, caption: "Court Lady", releaseStatus: "2021" },
+  { img: banner13, caption: "Royal Feast", releaseStatus: "2022" },
+  { img: banner14, caption: "Story of Yanxi Palace", releaseStatus: "2019" },
+  { img: banner15, caption: "Moonlit Reunion ", releaseStatus: "Upcoming" },
+  { img: banner16, caption: "Falling into your smile ", releaseStatus: "2021" },
+  { img: banner17, caption: "Fire Investigator ", releaseStatus: "Filming" },
 ];
 ---
 
@@ -40,7 +48,10 @@ const images = [
     images.map((item) => (
       <figure>
         <Image src={item.img} alt="banner" class="image" format="avif" />
-        <span class="caption">{item.caption}</span>
+        <span class="caption">
+          {item.caption} <span class="statusDesk"> - {item.releaseStatus}</span>
+        </span>
+        <span class="status">{item.releaseStatus}</span>
       </figure>
     ))
   }
@@ -83,6 +94,24 @@ const images = [
   }
   .fade-out {
     opacity: 0;
+  }
+  .status {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.8rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    display: none;
+  }
+  @media only screen and (max-width: 786px) {
+    .status {
+      display: block;
+    }
+    .statusDesk {
+      display: none;
+    }
   }
 </style>
 

@@ -186,6 +186,7 @@ import Carousel from "../components/Carousel.astro";
     justify-content: space-around;
     align-items: end;
     flex: 2;
+    position: relative;
   }
   .right img {
     /* width: 80%; */
@@ -206,6 +207,23 @@ import Carousel from "../components/Carousel.astro";
   }
 
   @media only screen and (max-width: 786px) {
+    .right::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 20%,
+        transparent 60%,
+        rgba(38, 40, 39, 0.6) 80%,
+        rgba(38, 40, 39, 0.8) 90%,
+        rgba(38, 40, 39, 1) 100%
+      );
+    }
     .landing {
       height: auto;
     }
@@ -238,22 +256,7 @@ import Carousel from "../components/Carousel.astro";
     .banner {
       display: none;
     }
-    .right::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-      background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        transparent 20%,
-        transparent 60%,
-        rgba(38, 40, 39, 0.8) 80%,
-        rgba(38, 40, 39, 1) 100%
-      );
-    }
+
     .carousel {
       height: 250px;
       display: block;
