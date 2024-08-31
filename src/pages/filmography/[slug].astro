@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layout/layout.astro";
+
+import { slugify } from "../../utils/utils.ts";
+export async function getStaticPaths() {
+  // const allProfiles = await Astro.glob('../../content/about/*.md');
+  // return allProfiles.map(profile => ({
+  //     params: {slug: slugify(profile.data.name)},
+  //     props: { profile },
+  // }))
+
+  const items = await getCollection("filmography");
+  return items.map((item) => ({
+    params: { slug: slugify(item.data.title) },
+    props: { item },
+  }));
+}
+
+const { slug } = Astro.params;
+const { item } = Astro.props;
+---
+
+<Layout> {JSON.stringify(item)}</Layout>

@@ -6,7 +6,7 @@ const filmographyCollection = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      useStatus: z.number().int(), // 0, 1, or 2
+      status: z.number().optional(), // 0 => released, 1 => ongoing,  2 => upcoming, 3 => filming
       releasedstatus: z.string(), // Date in YYYY-MM-DD format
       description: z.string(),
       isBanner: z.boolean().optional(),

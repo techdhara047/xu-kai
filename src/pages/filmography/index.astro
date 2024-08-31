@@ -5,9 +5,17 @@ import Layout from "../../layout/layout.astro";
 
 <Layout>
   <div>
-    <!-- <div class="head">Filmography</div> -->
+    <div class="head">Filmography</div>
     <Filmography />
   </div>
 </Layout>
 
-<style></style>
+<style>
+  .head {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(2rem, 10vw, 3rem);
+    /* padding: 9rem; */
+  }
+</style>

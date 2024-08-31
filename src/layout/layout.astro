@@ -24,6 +24,7 @@ import MediaLinks from "../components/MediaLinks.astro";
     </span>
 
     <div class="social-links">
+      <a class="back" href="/"><Icon name="mdi:arrow-left-bold" /></a>
       <MediaLinks />
     </div>
 
@@ -32,3 +33,15 @@ import MediaLinks from "../components/MediaLinks.astro";
     </div>
   </body>
 </html>
+
+<script>
+  const path = window.location.pathname;
+  const backbtn = document.querySelector(".back") as HTMLSpanElement;
+  console.log(path);
+  if (path === "/" || path.length === 0) {
+    backbtn.style.display = "none";
+  } else {
+    backbtn.style.display = "flex";
+    backbtn.setAttribute("href", "/");
+  }
+</script>

@@ -3,19 +3,59 @@ import { getCollection } from "astro:content";
 import CardContainer from "./Card/CardContainer";
 
 const filmography = await getCollection("filmography");
-const series = filmography.filter((item) => item.data.type === 0);
-const movies = filmography.filter((item) => item.data.type === 1);
-const varietyShows = filmography.filter((item) => item.data.type === 2);
+const upcoming = filmography.filter(
+  (item) => item.data.status === 2 || item.data.status === 3,
+);
+const ongoing = filmography.filter((item) => item.data.status === 1);
+const series = filmography.filter(
+  (item) => item.data.type === 0 && !item.data.status,
+);
+const movies = filmography.filter(
+  (item) => item.data.type === 1 && !item.data.status,
+);
+const varietyShows = filmography.filter(
+  (item) => item.data.type === 2 && !item.data.status,
+);
 ---
 
-<div id="filmography" class="filmography">
-  <div class="tv">
-    <CardContainer heading="TV Series" data={series} client:visible />
-  </div>
-  <div class="movie">
-    <CardContainer heading="Movies" data={movies} client:visible />
-  </div>
-  <div class="variety-show">
-    <CardContainer heading="Variety Shows" data={varietyShows} client:visible />
-  </div>
+<div class="filmography">
+  {
+    ongoing.length > 0 && (
+      <div class="tv">
+        <CardContainer heading="Ongoing" data={ongoing} client:visible />
+      </div>
+    )
+  }
+  {
+    upcoming.length > 0 && (
+      <div class="tv">
+        <CardContainer heading="Upcoming" data={upcoming} client:visible />
+      </div>
+    )
+  }
+  {
+    series.length > 0 && (
+      <div class="tv">
+        <CardContainer heading="TV Series" data={series} client:visible />
+      </div>
+    )
+  }
+  {
+    movies.length > 0 && (
+      <div class="movie">
+        <CardContainer heading="Movies" data={movies} client:visible />
+      </div>
+    )
+  }
+  {
+    varietyShows.length > 0 && (
+      <div class="variety-show">
+        <CardContainer
+          heading="Variety Shows"
+          data={varietyShows}
+          client:visible
+        />
+      </div>
+    )
+  }
 </div>
