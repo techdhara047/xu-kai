@@ -8,7 +8,7 @@
     "medium": "../../assets/img/banner/medium/banner4.webp",
     "low": "../../assets/img/banner/low/banner4.webp"
   },
-  "cardimages": ["/img/card/card4.webp", "/img/card/card4.webp"],
+  "cardimages": ["/img/card/card4.webp", "/img/card/card4a.webp"],
   "rating": 8.5,
   "isBanner": true,
   "type": 0,
