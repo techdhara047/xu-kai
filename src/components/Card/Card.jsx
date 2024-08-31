@@ -6,7 +6,6 @@ function Card({ item }) {
   const images = item.data.cardimages;
   const randomIndex = Math.floor(Math.random() * images.length);
   const href = slugify(item.data.title);
-  console.log(href);
 
   return (
     <a href={`/filmography/${href}`}>
