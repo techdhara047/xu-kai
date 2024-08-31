@@ -8,9 +8,11 @@
     "medium": "../../assets/img/banner/medium/banner9.webp",
     "low": "../../assets/img/banner/low/banner9.webp"
   },
+  "cardimages": ["/img/card/card9.webp", "/img/card/card9.webp"],
   "rating": 8.5,
   "isBanner": true,
   "type": 0,
+  "episodes": 40,
   "watchlinks": [
     {
       "name": "Watch on Viki",

@@ -8,8 +8,10 @@
     "medium": "../../assets/img/banner/medium/banner15.webp",
     "low": "../../assets/img/banner/low/banner15.webp"
   },
+  "cardimages": ["/img/card/card15.webp", "/img/card/card15.webp"],
   "rating": 8.5,
   "isBanner": true,
+  "episodes": 36,
   "type": 0,
   "watchlinks": [
     {

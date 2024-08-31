@@ -11,12 +11,13 @@ const filmographyCollection = defineCollection({
       description: z.string(),
       isBanner: z.boolean().optional(),
       genre: z.string().optional(),
-      episodes: z.array(z.string()).optional(),
+      episodes: z.number().optional(),
       tags: z.array(z.string()).optional(),
       type: z.number().optional(), // 0 => tv series, 1 => movie, 2 => variety shows
       novellink: z.string().optional(),
       originalNetwork: z.array(z.string()).optional(),
       country: z.string().optional(),
+      cardimages: z.array(z.string()).optional(),
       banner: z.object({
         high: image(),
         medium: image(),

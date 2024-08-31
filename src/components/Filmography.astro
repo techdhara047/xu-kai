@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import CardContainer from "./Card/CardContainer";
+
+const filmography = await getCollection("filmography");
+const series = filmography.filter((item) => item.data.type === 0);
+const movies = filmography.filter((item) => item.data.type === 1);
+const varietyShows = filmography.filter((item) => item.data.type === 2);
+---
+
+<div id="filmography" class="filmography">
+  <div class="tv">
+    <CardContainer heading="TV Series" data={series} client:visible />
+  </div>
+  <div class="movie">
+    <CardContainer heading="Movies" data={movies} client:visible />
+  </div>
+  <div class="variety-show">
+    <CardContainer heading="Variety Shows" data={varietyShows} client:visible />
+  </div>
+</div>

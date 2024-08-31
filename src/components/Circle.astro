@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+const { img } = Astro.props;
+---
+
+<div class="circle">
+  <Image src={img} alt="about pic" format="avif" height="100" width="100" />
+</div>
+
+<style>
+  .circle {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: gray;
+    position: relative;
+    overflow: hidden;
+    border: 0.3rem solid black;
+  }
+
+  .circle img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+</style>
