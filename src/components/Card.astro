@@ -8,26 +8,26 @@ import { Icon } from "astro-icon/components";
 const { item } = Astro.props;
 // console.log("item", item);
 
-const href = slugify(item.data.title);
-const images = item.data.cardimages;
-const status = item.data.status;
+const href = slugify(item.title);
+const images = item.cardimages;
+const status = item.status;
 ---
 
 <a href={`/filmography/${href}`}>
   <div class="card">
     {
-      (item.data.status === 2 || item.data.status === 3) && (
+      (item.status === 2 || item.status === 3) && (
         <span class="status">{Status[status as keyof typeof Status]}</span>
       )
     }
-    <p class="episodes">{item.data.episodes}</p>
+    <p class="episodes">{item.episodes}</p>
     <div class="body">
       <figure>
         {
-          !item.data.images ? (
+          !item.images ? (
             <img src={images[0]} alt="card image" />
           ) : (
-            <Image src={item.data.images[0]} alt="card images" format="avif" />
+            <Image src={item.images[0]} alt="card images" format="avif" />
           )
         }
       </figure>
@@ -36,22 +36,22 @@ const status = item.data.status;
     <div class="foot">
       <div>
         {
-          !item.data.status && (
+          !item.status && (
             <span class="rating">
-              <Icon name="mdi:star" />
-              {item.data.rating}
+              <Icon name="mdi:star" color="yellow" />
+              {item.rating}
             </span>
           )
         }
-        <span>{getYearFromDate(item.data.releasedstatus)}</span>
+        <span>{getYearFromDate(item.releasedstatus)}</span>
       </div>
       <p>
         <span
           style={{
-            backgroundColor: item.data.status === 1 ? "inherit" : "",
+            backgroundColor: item.status === 1 ? "inherit" : "",
           }}
         >
-          {item.data.title}
+          {item.title}
         </span>
       </p>
     </div>

@@ -7,6 +7,6 @@ const { data, heading } = Astro.props;
 <div class="cardContainer">
   <h4 class="heading">{heading}</h4>
   <div class="grid">
-    {data.map((item: any) => <Card item={item} />)}
+    {data.map((item: any) => <Card item={item.data} />)}
   </div>
 </div>

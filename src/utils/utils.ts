@@ -32,3 +32,17 @@ export function slugify(text: string): string {
     .replace(/[^\w\-]+/g, "") // Remove all non-word characters
     .replace(/\-\-+/g, "-"); // Replace multiple hyphens with a single hyphen
 }
+
+export function sortedArray(array: any) {
+  if (array.length < 1) return array;
+  return array.sort((a: any, b: any) => {
+    // Sort by 'releasestatus'
+    if (a.data.releasedstatus > b.data.releasedstatus) {
+      return -1; // For ascending order
+    }
+    if (a.data.releasedstatus < b.data.releasedstatus) {
+      return 1; // For ascending order
+    }
+    return 0; // If they are equal
+  });
+}

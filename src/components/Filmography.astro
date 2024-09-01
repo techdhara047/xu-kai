@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import CardContainer from "./Card/CardContainer";
 import CardBox from "./CardBox.astro";
 
+import { sortedArray } from "../utils/utils.ts";
+
 const filmography = await getCollection("filmography");
 const upcoming = filmography.filter(
   (item) => item.data.status === 2 || item.data.status === 3,
@@ -11,6 +13,7 @@ const ongoing = filmography.filter((item) => item.data.status === 1);
 const series = filmography.filter(
   (item) => item.data.type === 0 && !item.data.status,
 );
+
 const movies = filmography.filter(
   (item) => item.data.type === 1 && !item.data.status,
 );
@@ -40,7 +43,7 @@ const varietyShows = filmography.filter(
     series.length > 0 && (
       <div class="tv">
         {/* <CardContainer heading="TV Series" data={series} client:visible /> */}
-        <CardBox heading="TV Series" data={series} />
+        <CardBox heading="TV Series" data={sortedArray(series)} />
       </div>
     )
   }
@@ -48,7 +51,7 @@ const varietyShows = filmography.filter(
     movies.length > 0 && (
       <div class="movie">
         {/* <CardContainer heading="Movies" data={movies} client:visible /> */}
-        <CardBox heading="Movies" data={movies} />
+        <CardBox heading="Movies" data={sortedArray(movies)} />
       </div>
     )
   }
@@ -60,7 +63,7 @@ const varietyShows = filmography.filter(
           data={varietyShows}
           client:visible
         /> */}
-        <CardBox heading="varietyShows" data={varietyShows} />
+        <CardBox heading="varietyShows" data={sortedArray(varietyShows)} />
       </div>
     )
   }
