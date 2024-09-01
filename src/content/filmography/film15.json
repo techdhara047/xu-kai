@@ -9,6 +9,10 @@
     "low": "../../assets/img/banner/low/banner15.webp"
   },
   "cardimages": ["/img/card/card15.webp", "/img/card/card15a.webp"],
+  "images": [
+    "../../assets/img/card/card15.webp",
+    "../../assets/img/card/card15a.webp"
+  ],
   "rating": 8.5,
   "isBanner": true,
   "episodes": 36,

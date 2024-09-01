@@ -1,6 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import { Status } from "../utils/constants";
 import { slugify } from "../utils/utils";
+import { getYearFromDate } from "../utils/utils";
+import { Icon } from "astro-icon/components";
 
 const { item } = Astro.props;
 // console.log("item", item);
@@ -18,29 +21,39 @@ const status = item.data.status;
       )
     }
     <p class="episodes">{item.data.episodes}</p>
-
-    <figure>
-      <img src={images[0]} alt="card image" />
-    </figure>
-    <div
-      class="info"
-      style={{ display: item.data.status === 1 ? "block" : "none" }}
-    >
-      Updated upto 6 out of {item.data.episodes}
+    <div class="body">
+      <figure>
+        {
+          !item.data.images ? (
+            <img src={images[0]} alt="card image" />
+          ) : (
+            <Image src={item.data.images[0]} alt="card images" format="avif" />
+          )
+        }
+      </figure>
     </div>
-    <p
-      class="title"
-      style={{
-        position: item.data.status === 1 ? "static" : "absolute",
-      }}
-    >
-      <span
-        style={{
-          backgroundColor: item.data.status === 1 ? "inherit" : "",
-        }}
-      >
-        {item.data.title}
-      </span>
-    </p>
+
+    <div class="foot">
+      <div>
+        {
+          !item.data.status && (
+            <span class="rating">
+              <Icon name="mdi:star" />
+              {item.data.rating}
+            </span>
+          )
+        }
+        <span>{getYearFromDate(item.data.releasedstatus)}</span>
+      </div>
+      <p>
+        <span
+          style={{
+            backgroundColor: item.data.status === 1 ? "inherit" : "",
+          }}
+        >
+          {item.data.title}
+        </span>
+      </p>
+    </div>
   </div>
 </a>

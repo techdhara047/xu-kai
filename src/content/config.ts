@@ -18,6 +18,7 @@ const filmographyCollection = defineCollection({
       originalNetwork: z.array(z.string()).optional(),
       country: z.string().optional(),
       cardimages: z.array(z.string()).optional(),
+      images: z.array(image()).optional(),
       banner: z.object({
         high: image(),
         medium: image(),

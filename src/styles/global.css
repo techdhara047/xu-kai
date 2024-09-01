@@ -62,7 +62,7 @@ a {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1.7rem;
 }
 
@@ -70,15 +70,16 @@ a {
   position: relative;
   border-radius: 0.6rem;
   overflow: hidden;
-  /* min-height: 250px; */
-  /* background-color: white; */
-  /* height: 100%; */
+  background-color: #2d3436;
+}
+.card .body {
+  aspect-ratio: 3/4;
+  overflow: hidden;
 }
 
 .card figure {
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
   border-radius: 0.6rem;
   transition: 0.2s ease-in-out;
   /* background-color: red; */
@@ -105,19 +106,18 @@ a {
 
 /* Scale image on card hover */
 .card:hover img {
-  transform: scale(1.05); /* Only the image scales on hover */
+  transform: scale(1.05);
 }
 
-.card .title {
+/* .card .title {
   position: absolute;
   bottom: 0.8rem;
-  /* background-color: red; */
   left: 0;
   right: 0;
   font-size: 0.8rem;
   text-align: center;
   margin: 0.2rem;
-}
+} */
 .card .title span {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 0.2rem 0.4rem;
@@ -149,7 +149,20 @@ a {
   right: 0;
   text-align: center;
 }
-
+.card .foot {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+.foot div:first-child {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
 @media only screen and (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

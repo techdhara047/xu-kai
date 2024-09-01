@@ -9,6 +9,10 @@
     "low": "../../assets/img/banner/low/banner19.webp"
   },
   "cardimages": ["/img/card/card19.webp", "/img/card/card19a.webp"],
+  "images": [
+    "../../assets/img/card/card19.webp",
+    "../../assets/img/card/card19a.webp"
+  ],
   "rating": 8.5,
   "type": 0,
   "episodes": 28,

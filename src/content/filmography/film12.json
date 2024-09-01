@@ -9,6 +9,10 @@
     "low": "../../assets/img/banner/low/banner12.webp"
   },
   "cardimages": ["/img/card/card12.webp", "/img/card/card12a.webp"],
+  "images": [
+    "../../assets/img/card/card12.webp",
+    "../../assets/img/card/card12a.webp"
+  ],
   "rating": 8.5,
   "isBanner": true,
   "type": 0,
