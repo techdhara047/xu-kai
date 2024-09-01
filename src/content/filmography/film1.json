@@ -13,10 +13,10 @@
     "../../assets/img/card/card1.webp",
     "../../assets/img/card/card1a.webp"
   ],
-  "rating": 8.5,
+  "rating": 8.2,
   "type": 0,
   "isBanner": true,
-  "episodes": 20,
+  "episodes": 40,
   "watchlinks": [
     {
       "name": "Watch on Viki",
