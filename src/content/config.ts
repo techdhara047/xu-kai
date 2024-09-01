@@ -8,7 +8,7 @@ const filmographyCollection = defineCollection({
       title: z.string(),
       status: z.number().optional(), // 0 => released, 1 => ongoing,  2 => upcoming, 3 => filming
       releasedstatus: z.string(), // Date in YYYY-MM-DD format
-      description: z.string(),
+      description: z.array(z.string()).optional(),
       isBanner: z.boolean().optional(),
       genre: z.string().optional(),
       episodes: z.number().optional(),

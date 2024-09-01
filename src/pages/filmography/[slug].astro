@@ -3,13 +3,8 @@ import { getCollection } from "astro:content";
 import Layout from "../../layout/layout.astro";
 
 import { slugify } from "../../utils/utils.ts";
+import { Image } from "astro:assets";
 export async function getStaticPaths() {
-  // const allProfiles = await Astro.glob('../../content/about/*.md');
-  // return allProfiles.map(profile => ({
-  //     params: {slug: slugify(profile.data.name)},
-  //     props: { profile },
-  // }))
-
   const items = await getCollection("filmography");
   return items.map((item) => ({
     params: { slug: slugify(item.data.title) },
@@ -19,6 +14,34 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const { item } = Astro.props;
+console.log(item.data.banner.high);
 ---
 
-<Layout> {JSON.stringify(item)}</Layout>
+<Layout>
+  <div class="main">
+    <figure>
+      <Image
+        src={item.data.banner.high}
+        widths={[240, 540, 720, item.data.banner.high.width]}
+        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${item.data.banner.high.width}px`}
+        alt={item.data.title}
+        class="image"
+      />
+    </figure>
+    <div class="description">
+      {item.data.description?.map((p) => <p>{p}</p>)}
+    </div>
+  </div>
+</Layout>
+<style>
+  .main {
+    padding: 4rem 2rem;
+  }
+  .main img {
+    width: 100%;
+    height: 100%;
+  }
+  .main p {
+    margin-block: 0.8rem;
+  }
+</style>
