@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import CardContainer from "./Card/CardContainer";
+import CardBox from "./CardBox.astro";
 
 const filmography = await getCollection("filmography");
 const upcoming = filmography.filter(
@@ -22,39 +23,44 @@ const varietyShows = filmography.filter(
   {
     ongoing.length > 0 && (
       <div class="tv">
-        <CardContainer heading="Ongoing" data={ongoing} client:visible />
+        {/* <CardContainer heading="Ongoing" data={ongoing} client:visible /> */}
+        <CardBox heading="Ongoing" data={ongoing} />
       </div>
     )
   }
   {
     upcoming.length > 0 && (
       <div class="tv">
-        <CardContainer heading="Upcoming" data={upcoming} client:visible />
+        {/* <CardContainer heading="Upcoming" data={upcoming} client:visible /> */}
+        <CardBox heading="Upcoming" data={upcoming} />
       </div>
     )
   }
   {
     series.length > 0 && (
       <div class="tv">
-        <CardContainer heading="TV Series" data={series} client:visible />
+        {/* <CardContainer heading="TV Series" data={series} client:visible /> */}
+        <CardBox heading="TV Series" data={series} />
       </div>
     )
   }
   {
     movies.length > 0 && (
       <div class="movie">
-        <CardContainer heading="Movies" data={movies} client:visible />
+        {/* <CardContainer heading="Movies" data={movies} client:visible /> */}
+        <CardBox heading="Movies" data={movies} />
       </div>
     )
   }
   {
     varietyShows.length > 0 && (
       <div class="variety-show">
-        <CardContainer
+        {/* <CardContainer
           heading="Variety Shows"
           data={varietyShows}
           client:visible
-        />
+        /> */}
+        <CardBox heading="varietyShows" data={varietyShows} />
       </div>
     )
   }
