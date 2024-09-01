@@ -50,18 +50,18 @@ filmography.forEach((item) => {
               Arsenal Military Academy, winning awards for his performance.
             </p>
             <div class="stats">
-              <div class="rect">
+              <a class="rect" href="#series">
                 <h4>{counts[0]}</h4>
-                <a href="#series">TV Shows</a>
-              </div>
-              <div class="rect">
+                <p>TV Shows</p>
+              </a>
+              <a class="rect" href="#movies">
                 <h4>{counts[1]}</h4>
-                <a href="#movies">Movies</a>
-              </div>
-              <div class="rect">
+                <p>Movies</p>
+              </a>
+              <a class="rect" href="#varietyshows">
                 <h4>{counts[2]}</h4>
-                <a href="#varietyshows">Variety Shows</a>
-              </div>
+                <p>Variety Shows</p>
+              </a>
             </div>
           </div>
           <div class="right">
@@ -155,7 +155,7 @@ filmography.forEach((item) => {
     flex: 3;
   }
   .left h1 {
-    font-size: clamp(2rem, 10vw, 4.6rem);
+    font-size: clamp(2rem, 10vw, 5rem);
   }
   .left h1 > span {
     font-size: clamp(0.2em, 5vw, 0.5em);
@@ -180,7 +180,7 @@ filmography.forEach((item) => {
     justify-content: end;
     cursor: pointer;
   }
-  .rect:hover a {
+  .rect:hover p {
     text-decoration: underline;
   }
   .rect h4 {
@@ -188,7 +188,7 @@ filmography.forEach((item) => {
     font-weight: bold;
     margin-bottom: 0.3rem;
   }
-  .rect a {
+  .rect p {
     font-size: 0.85rem;
   }
   .right {
