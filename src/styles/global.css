@@ -47,6 +47,7 @@ a {
 .card .body {
   aspect-ratio: 3/4;
   overflow: hidden;
+  position: relative;
 }
 
 .card figure {
@@ -134,6 +135,14 @@ a {
   display: flex;
   align-items: center;
   gap: 0.15rem;
+}
+.role {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  margin: 0.4rem;
+  font-size: 0.8rem;
 }
 @media only screen and (max-width: 768px) {
   .grid {

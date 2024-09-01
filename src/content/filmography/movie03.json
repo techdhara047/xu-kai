@@ -1,23 +1,20 @@
 {
-  "title": "The Legends ",
+  "title": "Falling into Your Smile (Movie) ",
   "useStatus": 0,
-  "releasedstatus": "2019-01-28",
+  "releasedstatus": "2022-03-30",
   "description": "A Chinese drama series set in a fantastical world where a young man embarks on a journey of self-discovery and battles dark forces.",
   "banner": {
-    "high": "../../assets/img/banner/high/banner11.webp",
-    "medium": "../../assets/img/banner/medium/banner11.webp",
-    "low": "../../assets/img/banner/low/banner11.webp"
+    "high": "../../assets/img/banner/high/banner10.webp",
+    "medium": "../../assets/img/banner/medium/banner10.webp",
+    "low": "../../assets/img/banner/low/banner10.webp"
   },
-  "cardimages": ["/img/card/card11.webp", "/img/card/card11a.webp"],
-  "images": [
-    "../../assets/img/card/card11.webp",
-    "../../assets/img/card/card11a.webp"
-  ],
-  "rating": "8.2",
-  "isBanner": true,
-  "episodes": 56,
-  "type": 0,
-  "role": "",
+  "cardimages": ["/img/card/card10.webp", "/img/card/card10a.webp"],
+  "images": ["../../assets/img/card/movie/m03.webp"],
+  "rating": "7.9",
+  "isBanner": false,
+  "type": 1,
+  "episodes": 1,
+  "role": "Main Role",
   "watchlinks": [
     {
       "name": "Watch on Viki",

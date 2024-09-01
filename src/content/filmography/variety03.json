@@ -1,23 +1,20 @@
 {
-  "title": "The Legends ",
-  "useStatus": 0,
-  "releasedstatus": "2019-01-28",
+  "title": "Great Escape Season 5 ",
+  "status": 0,
+  "releasedstatus": "2023-01-14",
   "description": "A Chinese drama series set in a fantastical world where a young man embarks on a journey of self-discovery and battles dark forces.",
   "banner": {
-    "high": "../../assets/img/banner/high/banner11.webp",
-    "medium": "../../assets/img/banner/medium/banner11.webp",
-    "low": "../../assets/img/banner/low/banner11.webp"
+    "high": "../../assets/img/banner/high/banner18.webp",
+    "medium": "../../assets/img/banner/medium/banner18.webp",
+    "low": "../../assets/img/banner/low/banner18.webp"
   },
-  "cardimages": ["/img/card/card11.webp", "/img/card/card11a.webp"],
-  "images": [
-    "../../assets/img/card/card11.webp",
-    "../../assets/img/card/card11a.webp"
-  ],
-  "rating": "8.2",
-  "isBanner": true,
-  "episodes": 56,
-  "type": 0,
-  "role": "",
+  "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
+  "images": ["../../assets/img/card/vshow/v03.webp"],
+  "isBanner": false,
+  "rating": "8.1",
+  "type": 2,
+  "episodes": 13,
+  "role": "Regular Member",
   "watchlinks": [
     {
       "name": "Watch on Viki",

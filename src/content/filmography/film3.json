@@ -17,6 +17,7 @@
   "episodes": 37,
   "isBanner": true,
   "type": 0,
+  "role": "",
   "watchlinks": [
     {
       "name": "Watch on Viki",

@@ -1,7 +1,7 @@
 {
   "title": "Court Lady ",
   "useStatus": 0,
-  "releasedstatus": "2019-01-28",
+  "releasedstatus": "2021-04-15",
   "description": "A Chinese drama series set in a fantastical world where a young man embarks on a journey of self-discovery and battles dark forces.",
   "banner": {
     "high": "../../assets/img/banner/high/banner12.webp",
@@ -17,6 +17,7 @@
   "isBanner": true,
   "type": 0,
   "episodes": 55,
+  "role": "",
   "watchlinks": [
     {
       "name": "Watch on Viki",

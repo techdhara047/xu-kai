@@ -20,7 +20,7 @@ const status = item.status;
         <span class="status">{Status[status as keyof typeof Status]}</span>
       )
     }
-    <p class="episodes">{item.episodes}</p>
+    {item.type !== 1 && <p class="episodes">{item.episodes}</p>}
     <div class="body">
       <figure>
         {
@@ -31,6 +31,7 @@ const status = item.status;
           )
         }
       </figure>
+      <span class="role">{item.role}</span>
     </div>
 
     <div class="foot">

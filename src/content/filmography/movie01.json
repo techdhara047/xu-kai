@@ -10,13 +10,14 @@
   },
   "cardimages": ["/img/card/card10.webp", "/img/card/card10a.webp"],
   "images": [
-    "../../assets/img/card/card10.webp",
-    "../../assets/img/card/card10a.webp"
+    "../../assets/img/card/movie/m01.webp",
+    "../../assets/img/card/movie/m01a.webp"
   ],
   "rating": "7.0",
   "isBanner": true,
   "type": 1,
   "episodes": 1,
+  "role": "Support Role",
   "watchlinks": [
     {
       "name": "Watch on Viki",

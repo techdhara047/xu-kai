@@ -9,14 +9,12 @@
     "low": "../../assets/img/banner/low/banner18.webp"
   },
   "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
-  "images": [
-    "../../assets/img/card/card18.webp",
-    "../../assets/img/card/card18a.webp"
-  ],
+  "images": ["../../assets/img/card/vshow/v01.webp"],
   "isBanner": true,
   "rating": "8.3",
   "type": 2,
   "episodes": 12,
+  "role": "Regular Member",
   "watchlinks": [
     {
       "name": "Watch on Viki",
