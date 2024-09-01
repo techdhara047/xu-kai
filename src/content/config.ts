@@ -44,7 +44,16 @@ const filmographyCollection = defineCollection({
         .optional(), // Make `casts` optional
     }),
 });
-
+const newsCollection = defineCollection({
+  type: "data",
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      img: image(),
+      desc: z.string().optional(),
+    }),
+});
 export const collections = {
   filmography: filmographyCollection,
+  news: newsCollection,
 };

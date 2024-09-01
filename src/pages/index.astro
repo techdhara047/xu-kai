@@ -14,6 +14,7 @@ import { getCollection } from "astro:content";
 import ShadeDiv from "../components/ShadeDiv.astro";
 import Filmography from "../components/Filmography.astro";
 import Layout from "../layout/layout.astro";
+import News from "../components/News.astro";
 
 const filmography = await getCollection("filmography");
 const counts = {
@@ -51,15 +52,15 @@ filmography.forEach((item) => {
             <div class="stats">
               <div class="rect">
                 <h4>{counts[0]}</h4>
-                <p>TV Shows</p>
+                <a href="#series">TV Shows</a>
               </div>
               <div class="rect">
                 <h4>{counts[1]}</h4>
-                <p>Movies</p>
+                <a href="#movies">Movies</a>
               </div>
               <div class="rect">
                 <h4>{counts[2]}</h4>
-                <p>Variety Shows</p>
+                <a href="#varietyshows">Variety Shows</a>
               </div>
             </div>
           </div>
@@ -75,6 +76,9 @@ filmography.forEach((item) => {
       <div class="carousel">
         <Carousel />
       </div>
+    </ShadeDiv>
+    <ShadeDiv>
+      <News />
     </ShadeDiv>
     <!-- <Search data={filmography} client:visible /> -->
     <!-- filmography -->
@@ -151,7 +155,7 @@ filmography.forEach((item) => {
     flex: 3;
   }
   .left h1 {
-    font-size: clamp(2rem, 10vw, 5rem);
+    font-size: clamp(2rem, 10vw, 4.6rem);
   }
   .left h1 > span {
     font-size: clamp(0.2em, 5vw, 0.5em);
@@ -176,7 +180,7 @@ filmography.forEach((item) => {
     justify-content: end;
     cursor: pointer;
   }
-  .rect:hover p {
+  .rect:hover a {
     text-decoration: underline;
   }
   .rect h4 {
@@ -184,7 +188,7 @@ filmography.forEach((item) => {
     font-weight: bold;
     margin-bottom: 0.3rem;
   }
-  .rect p {
+  .rect a {
     font-size: 0.85rem;
   }
   .right {

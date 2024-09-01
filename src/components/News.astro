@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+const news = await getCollection("news");
+console.log(news);
+---
+
+<div class="news">
+  <figure>
+    <!-- <Image src={} alt="news" /> -->
+  </figure>
+</div>
