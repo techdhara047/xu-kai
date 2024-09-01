@@ -81,3 +81,12 @@ const news = await getCollection("news");
     }
   }
 </style>
+
+<script>
+  if (window.innerWidth <= 768) {
+    const scrollContainer = document.querySelector(
+      ".content",
+    ) as HTMLDivElement;
+    scrollContainer.scrollLeft = 10; // Scrolls 10 pixels from the left
+  }
+</script>
