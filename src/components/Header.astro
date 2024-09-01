@@ -56,6 +56,14 @@ const { title } = Astro.props;
     align-items: center;
     display: none;
   }
+  @media only screen and (max-width: 768px) {
+    header {
+      padding-inline: 1rem;
+    }
+    .center {
+      display: none;
+    }
+  }
 </style>
 
 <script>
