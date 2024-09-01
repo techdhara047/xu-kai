@@ -2,11 +2,77 @@
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 const news = await getCollection("news");
-console.log(news);
 ---
 
 <div class="news">
-  <figure>
-    <!-- <Image src={} alt="news" /> -->
-  </figure>
+  <h4 class="heading">Latest News</h4>
+  <div class="content">
+    {
+      news.map((item) => (
+        <div class="content-item">
+          <figure>
+            <Image src={item.data.img} alt="news" />
+          </figure>
+          <div>
+            <h5>{item.data.title}</h5>
+            {item.data.description?.map((p: string) => (
+              <p>{p}</p>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </div>
+<style>
+  .news {
+    padding-inline: 2rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .content-item {
+    flex: 0 0 calc(33% - 10px);
+  }
+
+  figure {
+    align-self: 3/2;
+  }
+
+  .content img {
+    width: 100%;
+    height: 100%;
+  }
+  .content h5 {
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+  .content p {
+    font-size: 0.8rem;
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .content::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .news {
+      padding-inline: 1rem;
+    }
+    .content-item {
+      flex: 0 0 calc(50% - 10px);
+    }
+  }
+</style>

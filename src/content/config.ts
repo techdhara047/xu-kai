@@ -50,7 +50,8 @@ const newsCollection = defineCollection({
     z.object({
       title: z.string(),
       img: image(),
-      desc: z.string().optional(),
+      description: z.array(z.string()).optional(),
+      videourl: z.string().optional(),
     }),
 });
 export const collections = {

@@ -69,7 +69,6 @@ const { title } = Astro.props;
 <script>
   const path = window.location.pathname;
   const backbtn = document.querySelector(".back") as HTMLSpanElement;
-  console.log(path);
   if (path === "/" || path.length === 0) {
     backbtn.style.display = "none";
   } else {

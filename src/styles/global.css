@@ -11,9 +11,7 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   font-family: "Abril Fatface", serif;
 }
 html {
@@ -41,7 +39,7 @@ a {
   gap: 2rem;
   padding: 4rem 2rem;
 }
-.cardContainer .heading {
+.heading {
   font-size: 1.6rem;
   padding-block: 0.9rem;
 }
@@ -92,18 +90,9 @@ a {
 
 /* Scale image on card hover */
 .card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
-/* .card .title {
-  position: absolute;
-  bottom: 0.8rem;
-  left: 0;
-  right: 0;
-  font-size: 0.8rem;
-  text-align: center;
-  margin: 0.2rem;
-} */
 .card .title span {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 0.2rem 0.4rem;
@@ -157,12 +146,13 @@ a {
   margin: 0.4rem;
   font-size: 0.8rem;
 }
+
 @media only screen and (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 1rem;
   }
   .filmography {
-    padding: 4rem 1rem;
+    padding-inline: 1rem;
   }
 }

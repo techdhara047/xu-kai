@@ -38,10 +38,10 @@ const status = item.status;
       <div>
         {
           !item.status && (
-            <span class="rating">
+            <div class="rating">
               <Icon name="mdi:star" color="yellow" />
               {item.rating}
-            </span>
+            </div>
           )
         }
         <span>{getYearFromDate(item.releasedstatus)}</span>
