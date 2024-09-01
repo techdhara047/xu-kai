@@ -1,0 +1,71 @@
+---
+import { Icon } from "astro-icon/components";
+import MediaLinks from "./MediaLinks.astro";
+const { title } = Astro.props;
+---
+
+<header>
+  <div class="left">
+    <div class="social-links">
+      <a class="back" href="/"><Icon name="mdi:arrow-left-bold" /></a>
+      <MediaLinks />
+    </div>
+  </div>
+  <div class="center">{title}</div>
+  <div class="end">
+    <span class="about-icon" data-menu>
+      <Icon name="mdi:menu" />
+    </span>
+  </div>
+</header>
+<style>
+  header {
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+  }
+  .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  .about-icon:hover {
+    color: #ff9f1a;
+  }
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .social-links > .back {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    display: none;
+  }
+</style>
+
+<script>
+  const path = window.location.pathname;
+  const backbtn = document.querySelector(".back") as HTMLSpanElement;
+  console.log(path);
+  if (path === "/" || path.length === 0) {
+    backbtn.style.display = "none";
+  } else {
+    backbtn.style.display = "flex";
+    backbtn.setAttribute("href", "/");
+  }
+</script>

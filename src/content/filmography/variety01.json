@@ -1,22 +1,22 @@
 {
-  "title": "Autumn Fairy Tale Movie ",
-  "useStatus": 0,
-  "releasedstatus": "2019-02-14",
+  "title": "Great Escape Season 6 ",
+  "status": 1,
+  "releasedstatus": "Ongoing",
   "description": "A Chinese drama series set in a fantastical world where a young man embarks on a journey of self-discovery and battles dark forces.",
   "banner": {
-    "high": "../../assets/img/banner/high/banner10.webp",
-    "medium": "../../assets/img/banner/medium/banner10.webp",
-    "low": "../../assets/img/banner/low/banner10.webp"
+    "high": "../../assets/img/banner/high/banner18.webp",
+    "medium": "../../assets/img/banner/medium/banner18.webp",
+    "low": "../../assets/img/banner/low/banner18.webp"
   },
-  "cardimages": ["/img/card/card10.webp", "/img/card/card10a.webp"],
+  "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
   "images": [
-    "../../assets/img/card/card10.webp",
-    "../../assets/img/card/card10a.webp"
+    "../../assets/img/card/card18.webp",
+    "../../assets/img/card/card18a.webp"
   ],
-  "rating": 7,
   "isBanner": true,
-  "type": 1,
-  "episodes": 1,
+  "rating": "8.3",
+  "type": 2,
+  "episodes": 12,
   "watchlinks": [
     {
       "name": "Watch on Viki",

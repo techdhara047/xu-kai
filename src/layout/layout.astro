@@ -3,7 +3,8 @@ import { Icon } from "astro-icon/components";
 import "../styles/global.css";
 
 import About from "../components/About.astro";
-import MediaLinks from "../components/MediaLinks.astro";
+import Header from "../components/Header.astro";
+const { title = "" } = Astro.props;
 ---
 
 <html lang="en">
@@ -12,36 +13,17 @@ import MediaLinks from "../components/MediaLinks.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Xu Kai</title>
+    <title>Xu Kai | {title}</title>
     <script>
       import "../scripts/main.js";
     </script>
   </head>
   <body>
     <About />
-    <span class="about-icon" data-menu>
-      <Icon name="mdi:menu" />
-    </span>
-
-    <div class="social-links">
-      <a class="back" href="/"><Icon name="mdi:arrow-left-bold" /></a>
-      <MediaLinks />
-    </div>
+    <Header title={title} />
 
     <div class="container">
       <slot />
     </div>
   </body>
 </html>
-
-<script>
-  const path = window.location.pathname;
-  const backbtn = document.querySelector(".back") as HTMLSpanElement;
-  console.log(path);
-  if (path === "/" || path.length === 0) {
-    backbtn.style.display = "none";
-  } else {
-    backbtn.style.display = "flex";
-    backbtn.setAttribute("href", "/");
-  }
-</script>

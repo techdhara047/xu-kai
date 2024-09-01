@@ -13,7 +13,7 @@
     "../../assets/img/card/card2.webp",
     "../../assets/img/card/card2a.webp"
   ],
-  "rating": 8.5,
+  "rating": "8.5",
   "isBanner": true,
 
   "type": 0,

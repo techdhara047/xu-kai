@@ -13,7 +13,7 @@
     "../../assets/img/card/card9.webp",
     "../../assets/img/card/card9a.webp"
   ],
-  "rating": 8.5,
+  "rating": "8.5",
   "isBanner": true,
   "type": 0,
   "episodes": 40,
