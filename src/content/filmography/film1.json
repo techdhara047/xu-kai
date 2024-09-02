@@ -23,6 +23,11 @@
   "role": "",
   "watchlinks": [
     {
+      "name": "YouTube",
+      "img": "../../assets/img/platform/youtube.webp",
+      "link": "https://www.youtube.com/watch?v=PNP0Nvy3y4w&list=PL12UiYvkzPXypd_FhICk51LVQpuLCTUrh"
+    },
+    {
       "name": "MGTV",
       "img": "../../assets/img/platform/mgtv.webp",
       "link": "https://w.mgtv.com/b/603354/21241977.html"
