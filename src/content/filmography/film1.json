@@ -23,12 +23,34 @@
   "role": "",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "MGTV",
+      "img": "../../assets/img/platform/mgtv.webp",
+      "link": "https://w.mgtv.com/b/603354/21241977.html"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "iQIYI",
+      "img": "../../assets/img/platform/iqyi.webp",
+      "link": "https://www.iq.com/album/%E4%BD%A0%E6%AF%94%E6%98%9F%E5%85%89%E7%BE%8E%E4%B8%BD-2023-28i22ou6dfx?lang=en_us"
+    },
+    {
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/40480c-as-beautiful-as-you"
+    },
+    {
+      "name": "TencentVideo",
+      "img": "../../assets/img/platform/tencent.webp",
+      "link": "https://v.qq.com/x/cover/mzc002004n42g5b/d35295o21wl.html"
+    },
+    {
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://mydramalist.com/redirect?q=https%3A%2F%2Fwetv.vip%2Fplay%2F1ltnca63z2g478c%2Fo0046kmtbig%3Fptag%3D3_5.9.5.10760_copy&utm_source=mdl&utm_medium=page&utm_campaign=wetv&utm_content=736993"
+    },
+    {
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://wetv.vip/en/play/1ltnca63z2g478c/o0046kmtbig?ptag=3_5.9.5.10760_copy"
     }
   ],
   "casts": [

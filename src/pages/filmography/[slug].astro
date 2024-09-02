@@ -1,8 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layout/layout.astro";
+import CardItem from "../../components/CardItem.astro";
 
-import { slugify } from "../../utils/utils.ts";
+import { getYearFromDate, slugify } from "../../utils/utils.ts";
 import { Image } from "astro:assets";
 export async function getStaticPaths() {
   const items = await getCollection("filmography");
@@ -14,34 +15,132 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const { item } = Astro.props;
-console.log(item.data.banner.high);
+const year = getYearFromDate(item.data.releasedstatus);
 ---
 
 <Layout>
-  <div class="main">
-    <figure>
-      <Image
-        src={item.data.banner.high}
-        widths={[240, 540, 720, item.data.banner.high.width]}
-        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${item.data.banner.high.width}px`}
-        alt={item.data.title}
-        class="image"
-      />
-    </figure>
-    <div class="description">
-      {item.data.description?.map((p) => <p>{p}</p>)}
+  <div class="container">
+    <div class="main">
+      <h4>{item.data.title} ({year})</h4>
+      <figure>
+        <Image
+          src={item.data.banner.high}
+          widths={[240, 540, 720, item.data.banner.high.width]}
+          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${item.data.banner.high.width}px`}
+          alt={item.data.title}
+          class="image"
+        />
+      </figure>
+      <div class="description">
+        {item.data.description?.map((p) => <p>{p}</p>)}
+      </div>
     </div>
+    <aside>
+      <div class="details">
+        <div class="head"><h4>Details</h4></div>
+        <div class="body">
+          <table>
+            <tr>
+              <th>Drama : </th>
+              <td> {item.data.title}</td>
+            </tr>
+            <tr>
+              <th>Country : </th>
+              <td>China</td>
+            </tr>
+            <tr>
+              <th>Episodes : </th>
+              <td>{item.data.episodes}</td>
+            </tr>
+            <tr>
+              <th>Rating : </th>
+              <td>{item.data.rating}</td>
+            </tr>
+            <tr>
+              <th>Year : </th>
+              <td>{year}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="watch">
+        <div class="head"><h4>Where to watch</h4></div>
+        <div class="body">
+          {item.data.watchlinks?.map((item) => <CardItem item={item} />)}
+        </div>
+      </div>
+    </aside>
   </div>
 </Layout>
 <style>
-  .main {
+  .container {
+    display: flex;
     padding: 4rem 2rem;
+    gap: 2rem;
+  }
+
+  .main {
+    flex: 4;
+    background-color: #2d3436;
+    padding-inline: 1.2rem;
+    padding-block: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  aside {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  aside > * {
+    padding: 0.8rem 1.2rem;
+  }
+  .details {
+    background-color: #2d3436;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .details .body {
+    font-size: 0.9rem;
+  }
+  tr {
+    text-align: left;
+  }
+  td {
+    padding-left: 0.5rem;
+  }
+  .watch {
+    background-color: #2d3436;
+  }
+  .description p {
+    margin-block: 0.8rem;
   }
   .main img {
     width: 100%;
     height: 100%;
   }
-  .main p {
-    margin-block: 0.8rem;
+
+  h4 {
+    font-size: 1.3rem;
+  }
+  .watch .body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    .main {
+      padding-inline: 1rem;
+    }
+    .container {
+      flex-direction: column;
+      padding-inline: 1rem;
+    }
   }
 </style>

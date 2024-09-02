@@ -31,6 +31,7 @@ const filmographyCollection = defineCollection({
           z.object({
             name: z.string(),
             link: z.string(),
+            img: image().optional(),
           }),
         )
         .optional(),
