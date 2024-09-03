@@ -1,6 +1,6 @@
 {
   "title": "The Legends ",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2019-01-28",
   "description": [
     "While attempting to take her predecessor’s Wanjun Sword, Lu Zhao Yao is ambushed by the ten immortal sects and dies. She mistakenly believes Li Chen Lan, who is her best ally, is related to the incident after he is revealed to be the demon king’s son.",
@@ -22,15 +22,22 @@
   "isBanner": true,
   "episodes": 56,
   "type": 0,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/The-Legends?id=95&q=true"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "YouTube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLpOYaWcHaja48sEXGpUKkI6vBsY4PE2kI"
+    },
+    {
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/36409c-the-legends"
     }
   ],
   "casts": [

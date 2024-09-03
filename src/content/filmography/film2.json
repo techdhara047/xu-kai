@@ -1,6 +1,6 @@
 {
   "title": "Ancient Love Poetry",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2021-07-17",
 
   "description": [
@@ -20,17 +20,39 @@
   ],
   "rating": "8.5",
   "isBanner": true,
-  "role": "",
+  "role": "Main Role",
   "type": 0,
   "episodes": 49,
   "watchlinks": [
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r9k1a9z1"
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/2bpkxhhgujnpsfi?vid=f0038q406v9"
     },
     {
-      "name": "Watch on Youku",
-      "link": "https://www.youku.com/show_page/id_z7c9b4e7b0c711e9a19b2c7e9b"
+      "name": "Tencent",
+      "img": "../../assets/img/platform/tencent.webp",
+      "link": "https://v.qq.com/x/cover/mzc00200y4wycre/w0039u2wbkb.html"
+    },
+    {
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Ancient-Love-Poetry--2021-?id=2623&q=true"
+    },
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=A_EEvv7foVw&list=PLMWZEm9GpId-Oo6ia8gsRnr1wvXgnCjzg"
+    },
+    {
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/38192c-ancient-love-poetry"
+    },
+    {
+      "name": "PrimeVideo",
+      "img": "../../assets/img/platform/prime.webp",
+      "link": "https://www.amazon.com/Ancient-Love-Poetry/dp/B09L5WPLLQ"
     }
   ],
   "casts": [

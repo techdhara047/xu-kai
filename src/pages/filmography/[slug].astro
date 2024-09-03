@@ -5,6 +5,7 @@ import CardItem from "../../components/CardItem.astro";
 
 import { getYearFromDate, slugify } from "../../utils/utils.ts";
 import { Image } from "astro:assets";
+import { Status } from "../../utils/constants";
 export async function getStaticPaths() {
   const items = await getCollection("filmography");
   return items.map((item) => ({
@@ -50,17 +51,15 @@ const year = getYearFromDate(item.data.releasedstatus);
               <td>China</td>
             </tr>
             <tr>
-              <th>Episodes : </th>
+              <th>Episodes: </th>
               <td>{item.data.episodes}</td>
             </tr>
-            {
-              item.data.role && (
-                <tr>
-                  <th>Role : </th>
-                  <td>{item.data.role}</td>
-                </tr>
-              )
-            }
+
+            <tr>
+              <th>Role : </th>
+              <td>{item.data.role}</td>
+            </tr>
+
             <tr>
               <th>Rating : </th>
               <td>{item.data.rating}</td>
@@ -68,6 +67,10 @@ const year = getYearFromDate(item.data.releasedstatus);
             <tr>
               <th>Year : </th>
               <td>{year}</td>
+            </tr>
+            <tr>
+              <th>Status : </th>
+              <td>{Status[item.data.status as keyof typeof Status]}</td>
             </tr>
           </table>
         </div>

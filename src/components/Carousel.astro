@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import { getYearFromDate } from "../utils/utils.ts";
+import { Status } from "../utils/constants";
 
 const filmography = await getCollection("filmography");
 console.log(filmography);
@@ -26,7 +27,10 @@ console.log(filmography);
               {item.data.title}{" "}
               <span class="statusDesk">
                 {" "}
-                - {getYearFromDate(item.data.releasedstatus)}
+                -{" "}
+                {!item.data.status
+                  ? getYearFromDate(item.data.releasedstatus)
+                  : Status[item.data.status as keyof typeof Status]}
               </span>
             </span>
             <span class="status">{item.data.releasedstatus}</span>

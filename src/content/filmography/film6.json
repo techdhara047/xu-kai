@@ -1,6 +1,6 @@
 {
   "title": "Arsenal Military Academy",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2019-08-06",
   "description": [
     "In the early years of the 20th century, Chinese military forces find themselves locked in a drawn-out, bloody conflict as they fight back again the Imperial Japanese army.",
@@ -24,15 +24,27 @@
   "isBanner": true,
   "type": 0,
   "episodes": 48,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Arsenal-Military-Academy?id=298&q=true"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLwzRhuSC899q1orvDF0OV22FtqMeAiy6I"
+    },
+    {
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/36693c-arsenal-military-academy"
+    },
+    {
+      "name": "iQIYI",
+      "img": "../../assets/img/platform/iqyi.webp",
+      "link": "https://www.iq.com/play/19rri0c58t"
     }
   ],
   "casts": [

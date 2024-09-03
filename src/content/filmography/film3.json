@@ -1,6 +1,6 @@
 {
   "title": "Best Choice Ever",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2024-05-01",
   "description": [
     "Mai Cheng Huan, a girl born into an ordinary family in Shanghai in the 1990s, is urged by her mother, Liu Wan Yu, to discuss marriage with her boyfriend, Xin Jia Liang. However, the affluent economic conditions of Xin's family upset the originally equal emotional relationship. At the same time, Mai's mother's excessive interference in her daughter's lifelong affairs accelerates the breakup between Mai Cheng Huan and Xin Jia Liang.",
@@ -22,15 +22,28 @@
   "episodes": 37,
   "isBanner": true,
   "type": 0,
-  "role": "",
+  "role": "Main Role",
+
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/svz2u80sswsbk6h/g41006y6zfd?ptag=3_5.8.1.10400_copy"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Tencent",
+      "img": "../../assets/img/platform/tencent.webp",
+      "link": "https://v.qq.com/x/cover/mzc00200nyxanqg/g0047aaly6x.html"
+    },
+    {
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Best-Choice-Ever/Episode-1?id=8817&ep=150324&page=0&pageSize=100"
+    },
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLiL-CuIBxVwP_3Xhahdv0Ub8PRf33s5t8"
     }
   ],
   "casts": [

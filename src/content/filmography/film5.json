@@ -1,6 +1,6 @@
 {
   "title": "She and Her Perfect Husband",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2022-11-22",
   "description": [
     "Single female lawyer Qin Shi is focused on her career, but was rushed into marriage by her parents. The top lawyer firm, Cheng & Hui is recruiting lawyers specializing in family affairs, and one of the requirements is to be married. Qin Wenyu, Qin Shi's second brother who is also a headhunter, secretly changed Qin Shi's marriage status to 'married' without her permission, thus creating a fictional husband for her out of nowhere. Not knowing anything, Qin Shi was employed. Her outstanding performance earned the approval of the founder, Lao Jin. During a gathering with partners, Lao Jin recommended Qin Shi to be a legal counsel for the Association of Women Entrepreneurs. It is only then Qin Shi realizes that she is 'married'. Qin Shi decides to clarify the situation to Lao Jin, but at this moment her 'husband' Yang Hua appears. He was forced by his mother to come for a matchmaking session with Qin Shi's competitor. Feeling angry about his mother's forceful actions, he has no choice but to seek the help of Qin Shi. Thus, the two people who are unwilling to be forced into marriage, hit it off immediately, and impulsively decide to register their marriage. However both their parents sense something wrong with the situation. At this moment, Qin Shi's ex-boyfriend suddenly joined the law firm. Facing the numerous crisis, Qin Shi and Yang Hua begin to slowly feelings for each other, and accidentally acquire true love.",
@@ -20,15 +20,37 @@
   "isBanner": true,
   "type": 0,
   "episodes": 40,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/hp442mlleptwrfy-She_and_Her_Perfect_Husband/i0037ju6430-Teaser_%7C_She_&_Her_Perfect_Husband"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "PrimeVideo",
+      "img": "../../assets/img/platform/prime.webp",
+      "link": "https://www.amazon.com/gp/video/detail/B0B84ZRRLX/ref=atv_dp_share_cu_r"
+    },
+    {
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/She-and-Her-Perfect-Husband?id=3626&q=true"
+    },
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLyX_50Z72L2xKw1X-SMoUcopIdMWTQLBy"
+    },
+    {
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/38429c-she-her-perfect-husband"
+    },
+    {
+      "name": "iQIYI",
+      "img": "../../assets/img/platform/iqyi.webp",
+      "link": "https://www.iq.com/album/she-and-her-perfect-husband-2022-22zaiwd32cd"
     }
   ],
   "casts": [

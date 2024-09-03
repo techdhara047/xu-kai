@@ -20,17 +20,8 @@
   "isBanner": true,
   "episodes": 36,
   "type": 0,
-  "role": "",
-  "watchlinks": [
-    {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
-    },
-    {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
-    }
-  ],
+  "role": "Main Role",
+  "watchlinks": [],
   "casts": [
     {
       "name": "Bai Lu",

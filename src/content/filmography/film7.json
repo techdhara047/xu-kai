@@ -1,6 +1,6 @@
 {
   "title": "Snow Eagle Lord",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2023-06-21",
   "description": [
     "The young man with Taigu bloodline, Dongbo Xueying, lost his father at a young age, is living with his younger brother. To save his mother, he gets involved in the battle between the good and the devil. In the treacherous confrontation with the devil race, Xueying is brave and fearless, and has repeatedly entered into dangers.In the meantime, Xueying and Yu Jingqiu, a girl of divine descent, meet and fall in love, and the two of them, through trials and tribulations, brave hardships and became soulmates,defending the Xia tribe, guarding the homeland, showing the style of the Xia youngsters, and finally smashing the devil's plot, defending the integrity of the territory, writing a soul-stirring myth. This story aims to tell the younger generation to not forget their original aspiration based on the nation and great love, and then become a real hero.",
@@ -20,15 +20,27 @@
   "isBanner": true,
   "type": 0,
   "episodes": 40,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/jho08eh15kv9teg/r00415hz4bw"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Snow-Eagle-Lord--CDrama-?id=6092&q=true"
+    },
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLMX26aiIvX5qFAwhk24dxUcnzsLvEFatX"
+    },
+    {
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/39256c-snow-eagle-lord"
     }
   ],
   "casts": [

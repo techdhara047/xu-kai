@@ -1,5 +1,6 @@
 {
   "title": "Wonderland of Love ",
+  "status": 0,
   "useStatus": 0,
   "releasedstatus": "2023-11-06",
   "description": [
@@ -20,15 +21,32 @@
   "isBanner": true,
   "type": 0,
   "episodes": 40,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/krp35ghl641h5uw/r0046qt90d5?ptag=3_5.9.5.10760_copy"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Tencent",
+      "img": "../../assets/img/platform/tencent.webp",
+      "link": "https://v.qq.com/x/cover/mzc00200t99fvn1/w00477dmxlu.html"
+    },
+    {
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Wonderland-of-Love?id=6093&q=true"
+    },
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLTB73Ibi_X3EOatBVEylG4NwUtbBe57dW"
+    },
+    {
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/39670c-wonderland-of-love"
     }
   ],
   "casts": [

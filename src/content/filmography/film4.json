@@ -1,6 +1,6 @@
 {
   "title": "Sword and Fairy",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2024-01-18",
   "description": [
     "Yue Jin Zhao and Yue Qi lived together in Wuyan Village for three years. With an amazing 'resonant' relationship, they knew nothing about each other's origins. They worked together to venture outside, wishing to get the old memories back. They were involved in mysterious events such as the rebellion of the Qihun Holy Sect and the Blood Sacrifice of Luojiabao, and in the process of fighting against the Holy Sect, Yue Qi suddenly regained her sealed memories and emotions...",
@@ -21,15 +21,32 @@
   "isBanner": true,
   "type": 0,
   "episodes": 36,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/xbt9vh2njpp6a5n/a0045z4t1pr?ptag=3_5.7.2.10170_copy"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Tencent",
+      "img": "../../assets/img/platform/tencent.webp",
+      "link": "https://v.qq.com/x/cover/mzc00200xzhxfhv/m0048xw0u0z.html?url_from=share&second_share=0&share_from=copy"
+    },
+    {
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Chinese-Paladin-Season-6---Sword-and-Fairy?id=6764&q=true"
+    },
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLMX26aiIvX5pHTajqdL6WdGpgOC5tOJS2"
+    },
+    {
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/40377c-sword-and-fairy?qId=ce396a2fc18ee61c58a2f33fd4442616"
     }
   ],
   "casts": [

@@ -1,6 +1,6 @@
 {
   "title": "Court Lady ",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2021-04-15",
   "description": [
     "Born into privilege as the son of one of the founding pillars of the Tang Empire, Sheng Chu Mo has never had any desire to do more than enjoying the ease of his own life. With no aspirations, no direction, and no ambition, his life was one of idleness and frivolity but all that changed the day he first laid eyes on Fu Rou. The daughter of a local merchant, Fu Rou never imagined she would be one to inspire greatness in anyone, but when she meets Sheng Chu Mo for the first time, that’s exactly what happens. Instantly enamored by the far superior Fu Rou, Chu Mo is suddenly aware of his own shortcomings and vows to make himself worthy of Fu Rou’s love. Dedicating himself to his studies, Chu Mo grows in knowledge and maturity, hoping that someday he will be worthy enough to ask for Fu Ruo's hand in marriage.",
@@ -21,15 +21,32 @@
   "isBanner": true,
   "type": 0,
   "episodes": 55,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Court-Lady--2021-?id=1562&q=true"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/36555c-court-lady"
+    },
+    {
+      "name": "iQIYI",
+      "img": "../../assets/img/platform/iqyi.webp",
+      "link": "https://www.iq.com/play/2cvwuqbsdug?&lang=id_id&sh_pltf=4"
+    },
+    {
+      "name": "PrimeVideo",
+      "img": "../../assets/img/platform/prime.webp",
+      "link": "https://www.amazon.com/Court-Lady/dp/B09CLMVNWC"
+    },
+    {
+      "name": "YouTube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLhnjbkseqMETX-S9_8U6Q7grLZKRKlytZ"
     }
   ],
   "casts": [

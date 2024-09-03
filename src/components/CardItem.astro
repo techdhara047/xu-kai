@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 const { item } = Astro.props;
 ---
 
-<a href={item.link}>
+<a href={item.link} target="_blank">
   <div class="carditem">
     <figure class="circle">
       {item.img && <Image src={item.img} alt={item.name} />}

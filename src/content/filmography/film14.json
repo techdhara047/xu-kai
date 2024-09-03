@@ -1,6 +1,6 @@
 {
   "title": "Story of Yanxi Palace 😔 ",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2018-07-19",
   "description": [
     "In 18th century Beijing, during the 6th year of Qianlong Emperor's reign, Wei Ying Luo enters the Forbidden City as an embroiderer to investigate the truth behind her older sister's rape and murder. Believing that Imperial Guard Fuca Fuheng is the prime suspect, Ying Luo schemingly approaches his sister, Empress Fuca Rongyin, and is transferred to work as her maid.",
@@ -24,12 +24,34 @@
   "role": "Support Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Story-of-Yanxi-Palace?id=1927&q=true"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/36279c-story-of-yanxi-palace"
+    },
+    {
+      "name": "iQIYI",
+      "img": "../../assets/img/platform/iqyi.webp",
+      "link": "https://www.iq.com/album/15yrzo9s2o9"
+    },
+    {
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/6z7bnclbwc12elz/n00320s7c3k"
+    },
+    {
+      "name": "YouTube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLhnjbkseqMETBEoxI9sgYqp3snAlnXeHI"
+    },
+    {
+      "name": "PrimeVideo",
+      "img": "../../assets/img/platform/prime.webp",
+      "link": "https://www.primevideo.com/detail/Story-of-Yanxi-Palace/0S80X1HU9S63WRYJLE9UY1UNNJ#:~:text=During%20the%206th%20year%20of,Dong%20and%20Wen%20De%20Guang."
     }
   ],
   "casts": [

@@ -1,6 +1,6 @@
 {
   "title": "Royal Feast  ",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2022-02-22",
   "description": [
     "Set during the Ming dynasty during the rule of the Yongle Emperor, it tells the story of a young girl named Yao Zi Jin, who entered the palace to become a maid of the food bureau. In the deep palace, she remains determined and slowly works her way up while perfecting her craft, making friends and encountering an unexpected romance at the same time.",
@@ -21,15 +21,32 @@
   "isBanner": true,
   "type": 0,
   "episodes": 40,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Imperial-Cuisine---Royal-Feast?id=4534&q=true"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/ubjswkubcxdezom"
+    },
+    {
+      "name": "MGTV",
+      "img": "../../assets/img/platform/mgtv.webp",
+      "link": "https://w.mgtv.com/b/348764/15562296.html?fpa=8&fpt=1&lastp=v_play&ftl=5"
+    },
+    {
+      "name": "TVBAnywhere NA",
+      "img": "../../assets/img/platform/tvb.webp",
+      "link": "https://tvbanywherena.com/english/videos/344-RoyalFeast/1732550423562113192"
+    },
+    {
+      "name": "YouTube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLhnjbkseqMEQ1r1Sw54189A8VbL95Pwhf"
     }
   ],
   "casts": [

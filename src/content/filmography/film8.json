@@ -1,6 +1,6 @@
 {
   "title": "Once Upon a Time in Lingjian Mountain",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2019-11-12",
   "description": [
     "A story that follows Wang Lu, a young genius, who enters the Spirit Blade Sect and embarks on an unconventional journey towards immortal cultivation.",
@@ -21,15 +21,22 @@
   "isBanner": true,
   "type": 0,
   "episodes": 37,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Once-Upon-a-Time-in-Lingjian-Mountain?id=226&q=true"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Netflix",
+      "img": "../../assets/img/platform/netflix.webp",
+      "link": "https://www.netflix.com/title/81208888"
+    },
+    {
+      "name": "iQIYI",
+      "img": "../../assets/img/platform/iqyi.webp",
+      "link": "https://www.iq.com/play/once-upon-a-time-in-lingjian-mountain-19rrhy43jt"
     }
   ],
   "casts": [
