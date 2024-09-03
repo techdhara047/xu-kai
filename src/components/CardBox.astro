@@ -5,8 +5,27 @@ const { data, heading } = Astro.props;
 ---
 
 <div class="cardContainer">
-  <h4 class="heading">{heading}</h4>
+  <div class="head">
+    <h4 class="heading">{heading}</h4><span class="number">{data.length}</span>
+  </div>
   <div class="grid">
     {data.map((item: any) => <Card item={item.data} />)}
   </div>
 </div>
+<style>
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .number {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    font-size: 0.65rem;
+    background-color: #7f8c8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>

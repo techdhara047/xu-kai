@@ -38,7 +38,7 @@ const news = await getCollection("news");
   }
 
   .content-item {
-    flex: 0 0 calc(33.34% - 1rem);
+    flex: 1;
     transition: 0.2s linear;
     /* border: 1px solid white; */
   }
@@ -46,8 +46,8 @@ const news = await getCollection("news");
     padding: 0.4rem 0.6rem;
   } */
   figure {
-    height: clamp(180px, 20vw, 230px);
-    align-self: 3/2;
+    /* height: clamp(180px, 20vw, 230px); */
+    aspect-ratio: 3/2;
   }
 
   .content img {
@@ -79,6 +79,9 @@ const news = await getCollection("news");
     .content-item {
       flex: 0 0 100%;
     }
+    figure {
+      width: 100%;
+    }
   }
 </style>
 
@@ -87,6 +90,6 @@ const news = await getCollection("news");
     const scrollContainer = document.querySelector(
       ".content",
     ) as HTMLDivElement;
-    scrollContainer.scrollLeft = 40; // Scrolls 10 pixels from the left
+    scrollContainer.scrollTo({ left: 200, behavior: "smooth" });
   }
 </script>
