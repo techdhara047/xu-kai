@@ -4,11 +4,12 @@ import { getCollection } from "astro:content";
 import { getYearFromDate } from "../utils/utils.ts";
 
 const filmography = await getCollection("filmography");
+console.log(filmography);
 ---
 
 <div class="banner-carousel">
   {
-    filmography.map((item) => {
+    filmography.map((item: any) => {
       if (item.data.isBanner) {
         return (
           <figure>
