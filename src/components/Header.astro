@@ -11,11 +11,12 @@ const { title } = Astro.props;
       <MediaLinks />
     </div>
   </div>
-  <div class="center">{title}</div>
+  <!-- <div class="center">{title}</div> -->
   <div class="end">
-    <span class="about-icon" data-menu>
-      <Icon name="mdi:menu" />
-    </span>
+    <ul>
+      <li><a href="/filmography">Filmography</a></li>
+      <li class="about-icon" data-menu><Icon name="mdi:menu" /></li>
+    </ul>
   </div>
 </header>
 <style>
@@ -30,6 +31,7 @@ const { title } = Astro.props;
     left: 0;
     right: 0;
     justify-content: space-between;
+    font-size: 0.9rem;
   }
   .center {
     position: absolute;
@@ -38,7 +40,6 @@ const { title } = Astro.props;
   }
 
   .about-icon {
-    font-size: 1.5rem;
     cursor: pointer;
     color: white;
   }
@@ -56,6 +57,15 @@ const { title } = Astro.props;
     align-items: center;
     display: none;
   }
+  .end ul {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .end li:last-child {
+    display: flex;
+    align-items: center;
+  }
   @media only screen and (max-width: 768px) {
     header {
       padding-inline: 1rem;
@@ -68,6 +78,15 @@ const { title } = Astro.props;
 
 <script>
   const path = window.location.pathname;
+  const selector = path.split("/")[1];
+  console.log(selector);
+  const navLinks = document.querySelectorAll("header a");
+
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === `/${selector}`) {
+      link.classList.add("active");
+    }
+  });
   const backbtn = document.querySelector(".back") as HTMLSpanElement;
   if (path === "/" || path.length === 0) {
     backbtn.style.display = "none";

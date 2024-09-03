@@ -31,6 +31,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.active {
+  color: #d35400 !important;
+}
 
 /* card styles */
 .filmography {
