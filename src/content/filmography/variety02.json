@@ -2,14 +2,11 @@
   "title": "Hello, Saturday 2024 ",
   "status": 0,
   "releasedstatus": "2024-01-06",
-  "description": [
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem sapiente nulla, ut a iusto atque facere maiores natus perspiciatis explicabo delectus architecto itaque, magnam cum animi molestias ipsum voluptatibus, unde aperiam laudantium doloremque illo eius aspernatur. Dignissimos deserunt molestiae aspernatur iusto error modi, incidunt rem minus voluptas quas quis sed nam accusamus fuga obcaecati quidem nulla voluptatibus porro tenetur perferendis possimus veniam quo dolores natus! Iure magni fugit ipsum consequuntur at. Sapiente quas quae dignissimos, itaque ea labore omnis, nobis provident ex optio eius aspernatur non velit distinctio, quidem illo! Dolorem minus totam molestiae consequuntur hic illo sit aperiam!",
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem sapiente nulla, ut a iusto atque facere maiores natus perspiciatis explicabo delectus architecto itaque, magnam cum animi molestias ipsum voluptatibus, unde aperiam laudantium doloremque illo eius aspernatur. Dignissimos deserunt molestiae aspernatur iusto error modi, incidunt rem minus voluptas quas quis sed nam accusamus fuga obcaecati quidem nulla voluptatibus porro tenetur perferendis possimus veniam quo dolores natus! Iure magni fugit ipsum consequuntur at. Sapiente quas quae dignissimos, itaque ea labore omnis, nobis provident ex optio eius aspernatur non velit distinctio, quidem illo! Dolorem minus totam molestiae consequuntur hic illo sit aperiam!"
-  ],
+  "description": [""],
   "banner": {
-    "high": "../../assets/img/banner/high/banner18.webp",
-    "medium": "../../assets/img/banner/medium/banner18.webp",
-    "low": "../../assets/img/banner/low/banner18.webp"
+    "high": "../../assets/img/banner/high/banner25.webp",
+    "medium": "../../assets/img/banner/medium/banner25.webp",
+    "low": "../../assets/img/banner/low/banner25.webp"
   },
   "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
   "images": ["../../assets/img/card/vshow/v02.webp"],
@@ -20,12 +17,19 @@
   "role": "Guest (Ep. 7-9)",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=BReusYKgWaQ"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=eE24sj9NZzU&t=1906s"
+    },
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=VJBk8CLhmII&t=119s"
     }
   ],
   "casts": [
