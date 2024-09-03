@@ -44,7 +44,7 @@ const status = item.status;
             </div>
           )
         }
-        <span>{getYearFromDate(item.releasedstatus)}</span>
+        <span>{!item.type && getYearFromDate(item.releasedstatus)}</span>
       </div>
       <p>
         <span
