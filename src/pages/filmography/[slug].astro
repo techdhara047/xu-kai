@@ -44,14 +44,7 @@ const year = getYearFromDate(item.data.releasedstatus);
               <th>Drama : </th>
               <td> {item.data.title}</td>
             </tr>
-            {
-              item.data.role && (
-                <tr>
-                  <th>Role : </th>
-                  <td>{item.data.role}</td>
-                </tr>
-              )
-            }
+
             <tr>
               <th>Country : </th>
               <td>China</td>
@@ -60,6 +53,14 @@ const year = getYearFromDate(item.data.releasedstatus);
               <th>Episodes : </th>
               <td>{item.data.episodes}</td>
             </tr>
+            {
+              item.data.role && (
+                <tr>
+                  <th>Role : </th>
+                  <td>{item.data.role}</td>
+                </tr>
+              )
+            }
             <tr>
               <th>Rating : </th>
               <td>{item.data.rating}</td>
