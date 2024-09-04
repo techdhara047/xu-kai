@@ -1,0 +1,36 @@
+{
+  "title": "Random Tour",
+  "status": 0,
+  "releasedstatus": "2024-06-06",
+  "description": [
+    "Happy Camp is a variety show which airs weekly, often featuring several popular celebrities as guest stars. Sometimes other regional celebrities from Hong Kong, China, Japan, South Korea, Taiwan and Singapore are invited. The Happy Camp stage gives many celebrities the opportunity to show their talents. Because the show is so well known, many singers and actors want to advertise their productions such as movies, books and songs. They participate in interviews, performing, and party games.",
+    ""
+  ],
+  "banner": {
+    "high": "../../assets/img/banner/high/banner32.webp",
+    "medium": "../../assets/img/banner/medium/banner32.webp",
+    "low": "../../assets/img/banner/low/banner32.webp"
+  },
+  "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
+  "images": ["../../assets/img/card/vshow/v11.webp"],
+  "isBanner": false,
+  "rating": "0",
+  "type": 2,
+  "episodes": 13,
+  "role": "Guest (Ep.7-8)",
+  "watchlinks": [],
+  "casts": [
+    {
+      "name": "Bai Lu",
+      "role": "Li Xue"
+    },
+    {
+      "name": "Chen Xingxu",
+      "role": "Zhou Zishu"
+    },
+    {
+      "name": "U Kai",
+      "role": "Main Lead"
+    }
+  ]
+}

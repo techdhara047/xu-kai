@@ -27,7 +27,7 @@ const status = item.status;
           !item.images ? (
             <img src={images[0]} alt="card image" />
           ) : (
-            <Image src={item.images[0]} alt="card images" format="avif" />
+            <Image src={item.images[0]} alt={item.title} loading="lazy" />
           )
         }
       </figure>
