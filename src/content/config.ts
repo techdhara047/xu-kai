@@ -22,8 +22,6 @@ const filmographyCollection = defineCollection({
       role: z.string().optional(),
       banner: z.object({
         high: image(),
-        medium: image().optional(),
-        low: image().optional(), // Make `low` optional
       }),
       rating: z.string(),
       watchlinks: z
