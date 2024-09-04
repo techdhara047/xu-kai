@@ -10,6 +10,7 @@ import ShadeDiv from "../components/ShadeDiv.astro";
 import Filmography from "../components/Filmography.astro";
 import Layout from "../layout/layout.astro";
 import News from "../components/News.astro";
+import Awards from "../components/Awards.astro";
 
 const filmography = await getCollection("filmography");
 const counts = {
@@ -81,6 +82,9 @@ filmography.forEach((item: any) => {
 
       <!-- filmography section -->
       <Filmography />
+
+      <!-- awards and nomination -->
+      <Awards />
     </ShadeDiv>
   </div>
 </Layout>

@@ -1,0 +1,74 @@
+---
+import awards from "../data/awards.json";
+console.log(awards);
+---
+
+<div class="awards">
+  <div class="head"><h4 class="heading">Awards and Nominations</h4></div>
+  <div class="body">
+    <table class="table">
+      <tr>
+        <th>Year</th>
+        <th>Award</th>
+        <th>Category</th>
+        <th>Nominated Work</th>
+        <th>Result</th>
+      </tr>
+      {
+        awards.map((award) => (
+          <tr>
+            <td>{award.year}</td>
+            <td>{award.award}</td>
+            <td>{award.category}</td>
+            <td>{award.nominated_work}</td>
+            <td>{award.result}</td>
+          </tr>
+        ))
+      }
+    </table>
+  </div>
+</div>
+
+<style>
+  .awards {
+    padding: 0rem 2rem;
+    padding-bottom: 4rem;
+  }
+  .body {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2d3436;
+  }
+  th {
+    background-color: #000; /* Green background for header */
+    /* color: white; */
+    text-align: left;
+    padding: 0.5rem;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-size: 0.9rem;
+  }
+  tr td:first-child,
+  th:first-child {
+    border-left: 1px solid #ddd;
+  }
+
+  tr:nth-child(even) {
+    background-color: #2f3542;
+  }
+
+  tr:hover {
+    background-color: #57606f;
+  }
+</style>
