@@ -23,6 +23,11 @@
       "name": "Youtube",
       "img": "../../assets/img/platform/ytb.webp",
       "link": "https://www.youtube.com/watch?v=JG6gyrt3_Rg&list=PLLHZwb4D-julTS6MpEj8b_TsT01UuzFti"
+    },
+    {
+      "name": "MgTV",
+      "img": "../../assets/img/platform/mgtv.webp",
+      "link": "https://www.mgtv.com/h/328606.html"
     }
   ],
   "casts": [
