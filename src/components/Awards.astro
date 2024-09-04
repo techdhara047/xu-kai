@@ -1,6 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
 import awards from "../data/awards.json";
-console.log(awards);
 ---
 
 <div class="awards">
@@ -21,7 +21,13 @@ console.log(awards);
             <td>{award.award}</td>
             <td>{award.category}</td>
             <td>{award.nominated_work}</td>
-            <td>{award.result}</td>
+            <td>
+              {award.result ? (
+                <Icon name="mdi:check-decagram" color="green" />
+              ) : (
+                ""
+              )}
+            </td>
           </tr>
         ))
       }
@@ -70,5 +76,9 @@ console.log(awards);
 
   tr:hover {
     background-color: #57606f;
+  }
+  tr td:last-child {
+    text-align: center;
+    font-size: 1.2rem;
   }
 </style>
