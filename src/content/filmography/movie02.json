@@ -1,6 +1,6 @@
 {
   "title": "1921 ",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2021-07-01",
   "description": [
     "Commemorating the 100th anniversary of the founding of the Chinese Communist Party (CCP) and chronicling the Chinese Revolution. The film, set in 1921, reflects on the Communist Party's early history during the turbulent era, examining the remarkable Chinese revolutionary leaders' zeal and contrition for the ascension of the Chinese people.",
@@ -18,16 +18,7 @@
   "type": 1,
   "episodes": 1,
   "role": "Support Role",
-  "watchlinks": [
-    {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
-    },
-    {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
-    }
-  ],
+  "watchlinks": [],
   "casts": [
     {
       "name": "Bai Lu",

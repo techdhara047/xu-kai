@@ -1,0 +1,42 @@
+{
+  "title": "Keep Running Season 7",
+  "status": 0,
+  "releasedstatus": "2019-03-04",
+  "description": [
+    "Keep Running is a reality-variety show where stars 7 regular members. In each episode, they must complete missions at famous landmarks to win the race. The missions almost always feature running, hence the title, and the name tag ripping.",
+    ""
+  ],
+  "banner": {
+    "high": "../../assets/img/banner/high/banner31.webp",
+    "medium": "../../assets/img/banner/medium/banner31.webp",
+    "low": "../../assets/img/banner/low/banner31.webp"
+  },
+  "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
+  "images": ["../../assets/img/card/vshow/v08a.webp"],
+  "isBanner": false,
+  "rating": "8.4",
+  "type": 2,
+  "episodes": 12,
+  "role": "Guest (Ep. 6)",
+  "watchlinks": [
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=tgF7JdwGGjg"
+    }
+  ],
+  "casts": [
+    {
+      "name": "Bai Lu",
+      "role": "Li Xue"
+    },
+    {
+      "name": "Chen Xingxu",
+      "role": "Zhou Zishu"
+    },
+    {
+      "name": "U Kai",
+      "role": "Main Lead"
+    }
+  ]
+}

@@ -21,8 +21,8 @@ const { item } = Astro.props;
     transition: transform 0.3s linear;
   }
   .circle {
-    height: 3rem;
-    width: 3rem;
+    height: 2.6rem;
+    width: 2.6rem;
     border-radius: 50%;
     background-color: white;
     overflow: hidden;
@@ -30,6 +30,9 @@ const { item } = Astro.props;
   }
   .carditem:hover .circle {
     transform: scale(1.1);
+  }
+  .carditem:hover p {
+    text-decoration: underline;
   }
   .circle img {
     height: 100%;

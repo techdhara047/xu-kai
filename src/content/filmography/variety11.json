@@ -1,0 +1,67 @@
+{
+  "title": "Happy Camp",
+  "status": 0,
+  "releasedstatus": "1997-07-11",
+  "description": [
+    "Happy Camp is a variety show which airs weekly, often featuring several popular celebrities as guest stars. Sometimes other regional celebrities from Hong Kong, China, Japan, South Korea, Taiwan and Singapore are invited. The Happy Camp stage gives many celebrities the opportunity to show their talents. Because the show is so well known, many singers and actors want to advertise their productions such as movies, books and songs. They participate in interviews, performing, and party games.",
+    ""
+  ],
+  "banner": {
+    "high": "../../assets/img/banner/high/banner32.webp",
+    "medium": "../../assets/img/banner/medium/banner32.webp",
+    "low": "../../assets/img/banner/low/banner32.webp"
+  },
+  "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
+  "images": ["../../assets/img/card/vshow/v11.webp"],
+  "isBanner": false,
+  "rating": "8.2",
+  "type": 2,
+  "episodes": 1265,
+  "role": "Guest(20180818, 20190302, 20190309, 20200119, 20200606, 20210619)",
+  "watchlinks": [
+    {
+      "name": "Youtube (20210619)",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=bd7AjYUNR1A&list=PLU3QFMJR5RpZ2hsmd5BYrwJ4g9FM31S5z"
+    },
+    {
+      "name": "Youtube (20200606)",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=StEnx9EPTiM&list=PLU3QFMJR5RpZ2hsmd5BYrwJ4g9FM31S5z&index=2"
+    },
+    {
+      "name": "Youtube (20200119)",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=9VbJQqOf7o4&list=PLU3QFMJR5RpZ2hsmd5BYrwJ4g9FM31S5z&index=3"
+    },
+    {
+      "name": "Youtube (20190309)",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=hAj28v4pogY&list=PLU3QFMJR5RpZ2hsmd5BYrwJ4g9FM31S5z&index=4"
+    },
+    {
+      "name": "Youtube (20190302)",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=DvwSb7fcsHY&list=PLU3QFMJR5RpZ2hsmd5BYrwJ4g9FM31S5z&index=5"
+    },
+    {
+      "name": "Youtube (20180818)",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=7yRQeaUfc7M&list=PLU3QFMJR5RpZ2hsmd5BYrwJ4g9FM31S5z&index=6"
+    }
+  ],
+  "casts": [
+    {
+      "name": "Bai Lu",
+      "role": "Li Xue"
+    },
+    {
+      "name": "Chen Xingxu",
+      "role": "Zhou Zishu"
+    },
+    {
+      "name": "U Kai",
+      "role": "Main Lead"
+    }
+  ]
+}

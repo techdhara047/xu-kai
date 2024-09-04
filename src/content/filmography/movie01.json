@@ -1,6 +1,6 @@
 {
   "title": "Autumn Fairy Tale Movie ",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2019-02-14",
   "description": [
     "En Xi (starring Rosy Zhao) and Xin Ai (starring Meng Mei Qi) were accidentally switched at birth by the older brother, Jun Xi (starring Jiao Rui). After Jun Xi's close friend, Han Tai (starring Xu Kai) learned about what had happened to En Xi, he decides to protect her and rejects Xin Ai's love confession. As for En Xi, does Jun Xi count as her 'brother' or a lover? What does fate have in store for them? Collapse",
@@ -23,12 +23,14 @@
   "role": "Support Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "iQIYI",
+      "img": "../../assets/img/platform/iqyi.webp",
+      "link": "https://www.iq.com/play/flg8snys74"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Autumn-Fairy-Tale?id=2904&q=true"
     }
   ],
   "casts": [

@@ -1,0 +1,43 @@
+{
+  "title": "Great Escape Season 4  ",
+  "status": 0,
+  "releasedstatus": "2022-07-14",
+  "description": [""],
+  "banner": {
+    "high": "../../assets/img/banner/high/banner24.webp",
+    "medium": "../../assets/img/banner/medium/banner24.webp",
+    "low": "../../assets/img/banner/low/banner24.webp"
+  },
+  "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
+  "images": ["../../assets/img/card/vshow/v05.webp"],
+  "isBanner": false,
+  "rating": "7.9",
+  "type": 2,
+  "episodes": 14,
+
+  "role": "Guest (Ep. 3-4, 7-9)",
+  "watchlinks": [
+    {
+      "name": "Watch on Viki",
+      "link": "https://www.viki.com/tv/36856c-the-legends"
+    },
+    {
+      "name": "Watch on iQIYI",
+      "link": "https://www.iq.com/play/20r8y1j98k"
+    }
+  ],
+  "casts": [
+    {
+      "name": "Bai Lu",
+      "role": "Li Xue"
+    },
+    {
+      "name": "Chen Xingxu",
+      "role": "Zhou Zishu"
+    },
+    {
+      "name": "U Kai",
+      "role": "Main Lead"
+    }
+  ]
+}

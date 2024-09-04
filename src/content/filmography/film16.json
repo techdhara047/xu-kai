@@ -1,6 +1,6 @@
 {
-  "title": "Falling into your smile 😊 ",
-  "useStatus": 0,
+  "title": "Falling into your smile ",
+  "status": 0,
   "releasedstatus": "2021-06-23",
   "description": [
     "In the ultra-competitive world of e-sports, the all-male ZGDX OPL team is second to none. Armies of adoring female fans follow the team wherever it goes. But when one of the team’s star players suffers a hand injury, the tall, handsome, and notoriously hard-to-please ZGDX captain Lu Si Cheng will not be rushed into choosing a replacement.",
@@ -21,15 +21,42 @@
   "isBanner": true,
   "type": 0,
   "episodes": 31,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Falling-Into-Your-Smile?id=773&q=true"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Netflix",
+      "img": "../../assets/img/platform/netflix.webp",
+      "link": "https://www.netflix.com/title/81566868"
+    },
+    {
+      "name": "Youku",
+      "img": "../../assets/img/platform/youku.webp",
+      "link": "https://www.youku.tv/v/v_show/id_XNTIwMjE3ODA0NA==.html"
+    },
+    {
+      "name": "Tencent",
+      "img": "../../assets/img/platform/tencent.webp",
+      "link": "https://v.qq.com/x/cover/mzc0020073xzbad/b33154foqce.html"
+    },
+    {
+      "name": "YouTube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLIPiKkS-FpK8KCCeSQTpodI0VqMejybr9"
+    },
+    {
+      "name": "Viki",
+      "img": "../../assets/img/platform/viki.webp",
+      "link": "https://www.viki.com/tv/37358c-falling-into-your-smile?locale=en"
+    },
+    {
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/2knhnaakii18oxj-Falling%20Into%20Your%20Smile/q0039ns0ou2-EP1%3A%20Falling%20Into%20Your%20Smile"
     }
   ],
   "casts": [

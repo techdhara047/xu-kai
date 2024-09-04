@@ -1,0 +1,42 @@
+{
+  "title": "Real Actor",
+  "status": 0,
+  "releasedstatus": "2019-11-08",
+  "description": [
+    "Real Actor combines the three concepts of studio, workplace and battlefield. By recording the actors' workplace and the survival of the studio, the audience can see the real actor's suffering, the actor's difficulty, the actor's specialty, and see the most realistic acting school",
+    ""
+  ],
+  "banner": {
+    "high": "../../assets/img/banner/high/banner30.webp",
+    "medium": "../../assets/img/banner/medium/banner30.webp",
+    "low": "../../assets/img/banner/low/banner30.webp"
+  },
+  "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
+  "images": ["../../assets/img/card/vshow/v09.webp"],
+  "isBanner": false,
+  "rating": "7.5",
+  "type": 2,
+  "episodes": 14,
+  "role": "Guest (Ep. 13)",
+  "watchlinks": [
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=l67roNaABWs"
+    }
+  ],
+  "casts": [
+    {
+      "name": "Bai Lu",
+      "role": "Li Xue"
+    },
+    {
+      "name": "Chen Xingxu",
+      "role": "Zhou Zishu"
+    },
+    {
+      "name": "U Kai",
+      "role": "Main Lead"
+    }
+  ]
+}

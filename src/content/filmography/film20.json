@@ -1,6 +1,6 @@
 {
   "title": "Lost in the Kunlun Mountains ",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2022-07-27",
   "description": [
     "During the Republic of China, the gifted and kind-hearted Ding Yun Qi who is in the process of investigating the bizarre disappearance of his father accidentally discovers the actual existence of the Kunlun Ruins, which all of his life he perceived to be just a myth.",
@@ -20,15 +20,32 @@
   "rating": "7.6",
   "type": 0,
   "episodes": 36,
-  "role": "",
+  "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
+      "name": "Kisskh",
+      "img": "../../assets/img/platform/kisskh.webp",
+      "link": "https://kisskh.co/Drama/Lost-in-the-Kunlun-Mountains?id=5713&q=true"
     },
     {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "iQIYI",
+      "img": "../../assets/img/platform/iqyi.webp",
+      "link": "https://www.iq.com/album/lost-in-the-kunlun-mountains-2022-1lcgodfpacd?lang=en_us"
+    },
+    {
+      "name": "WeTV",
+      "img": "../../assets/img/platform/wetv.webp",
+      "link": "https://wetv.vip/en/play/ps0t2728qtcf6hf"
+    },
+    {
+      "name": "YouTube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/playlist?list=PLlCrV9TCfzMZHJQuEDGGR72Zx27f0_lE1"
+    },
+    {
+      "name": "Tencent",
+      "img": "../../assets/img/platform/tencent.webp",
+      "link": "https://v.qq.com/x/cover/mzc00200fivc1di/k0043ubas13.html"
     }
   ],
   "casts": [

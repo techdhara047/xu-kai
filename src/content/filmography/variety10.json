@@ -1,0 +1,42 @@
+{
+  "title": "Youth Perplous Season 1",
+  "status": 0,
+  "releasedstatus": "2021-03-04",
+  "description": [
+    "A reality-variety show that stars 7 regular members. In each episode, they must complete missions at famous landmarks to win the race. The missions almost always feature running, hence the title. Cast members also engage in name tag-ripping",
+    ""
+  ],
+  "banner": {
+    "high": "../../assets/img/banner/high/banner28.webp",
+    "medium": "../../assets/img/banner/medium/banner28.webp",
+    "low": "../../assets/img/banner/low/banner28.webp"
+  },
+  "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
+  "images": ["../../assets/img/card/vshow/v10.webp"],
+  "isBanner": false,
+  "rating": "7.9",
+  "type": 2,
+  "episodes": 12,
+  "role": "Guest (Ep. 2)",
+  "watchlinks": [
+    {
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=AxEClJRirMA&t=1564s"
+    }
+  ],
+  "casts": [
+    {
+      "name": "Bai Lu",
+      "role": "Li Xue"
+    },
+    {
+      "name": "Chen Xingxu",
+      "role": "Zhou Zishu"
+    },
+    {
+      "name": "U Kai",
+      "role": "Main Lead"
+    }
+  ]
+}

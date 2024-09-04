@@ -1,6 +1,6 @@
 {
   "title": "Falling into Your Smile (Movie) ",
-  "useStatus": 0,
+  "status": 0,
   "releasedstatus": "2022-03-30",
   "description": [
     "In the ultra-competitive world of e-sports, the all-male ZGDX OPL team is second to none. Armies of adoring female fans follow the team wherever it goes. But when one of the team’s star players suffers a hand injury, the tall, handsome, and notoriously hard-to-please ZGDX captain Lu Si Cheng will not be rushed into choosing a replacement.",
@@ -21,12 +21,9 @@
   "role": "Main Role",
   "watchlinks": [
     {
-      "name": "Watch on Viki",
-      "link": "https://www.viki.com/tv/36856c-the-legends"
-    },
-    {
-      "name": "Watch on iQIYI",
-      "link": "https://www.iq.com/play/20r8y1j98k"
+      "name": "Youtube",
+      "img": "../../assets/img/platform/ytb.webp",
+      "link": "https://www.youtube.com/watch?v=COa-SO_gwkE"
     }
   ],
   "casts": [
