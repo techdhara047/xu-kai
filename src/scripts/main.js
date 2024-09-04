@@ -15,6 +15,30 @@ if (menuIcon && aboutElm) {
 cancelElm.addEventListener("click", () => {
   aboutElm.style.transform = "translateX(100%)";
 });
-// button.addEventListener("click", () => {
-//   aboutElm.style.transform = "translateX(100%)";
-// });
+
+const filmographyElm = document.getElementById("filmography");
+const awardsElm = document.getElementById("awards");
+
+const observerOptions = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.2, // Adjust this value based on when you want the effect to trigger
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const id = entry.target.getAttribute("id");
+    const elem = document.querySelector(`a[href="#${id}"]`);
+    console.log(entry.target);
+
+    if (entry.isIntersecting) {
+      elem.classList.add("active");
+      history.pushState(null, "", `#${id}`);
+    } else {
+      elem.classList.remove("active");
+    }
+  });
+}, observerOptions);
+// add obersever
+observer.observe(filmographyElm);
+observer.observe(awardsElm);

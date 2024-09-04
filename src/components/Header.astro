@@ -14,7 +14,7 @@ const { title } = Astro.props;
   <!-- <div class="center">{title}</div> -->
   <div class="end">
     <ul>
-      <li><a href="/filmography">Filmography</a></li>
+      <li><a href="#filmography">Filmography</a></li>
       <li><a href="#awards">Awards</a></li>
       <li class="about-icon" data-menu><Icon name="mdi:menu" /></li>
     </ul>
@@ -87,17 +87,22 @@ const { title } = Astro.props;
   const selector = path.split("/")[1];
   console.log(selector);
   const navLinks = document.querySelectorAll("header a");
+  const awardsLink = document.querySelector(
+    "[href='#awards']",
+  ) as HTMLAnchorElement;
+  const filmLink = document.querySelector(
+    "[href='#filmography']",
+  ) as HTMLAnchorElement;
 
-  navLinks.forEach((link) => {
-    if (link.getAttribute("href") === `/${selector}`) {
-      link.classList.add("active");
-    }
-  });
   const backbtn = document.querySelector(".back") as HTMLSpanElement;
   if (path === "/" || path.length === 0) {
     backbtn.style.display = "none";
+    awardsLink.style.display = "inline";
+    filmLink.style.display = "inline";
   } else {
     backbtn.style.display = "flex";
     backbtn.setAttribute("href", "/");
+    awardsLink.style.display = "none";
+    filmLink.style.display = "none";
   }
 </script>
