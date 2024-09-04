@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import img from "../assets/img/1.webp";
-import { Icon } from "astro-icon/components";
 import "../styles/global.css";
 
 import Carousel from "../components/Carousel.astro";
@@ -19,7 +18,7 @@ const counts = {
   2: 0,
 };
 
-filmography.forEach((item) => {
+filmography.forEach((item: any) => {
   if (item.data.type === 0) counts[0]++;
   if (item.data.type === 1) counts[1]++;
   if (item.data.type === 2) counts[2]++;
