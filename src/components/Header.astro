@@ -15,6 +15,7 @@ const { title } = Astro.props;
   <div class="end">
     <ul>
       <li><a href="/filmography">Filmography</a></li>
+      <li><a href="#awards">Awards</a></li>
       <li class="about-icon" data-menu><Icon name="mdi:menu" /></li>
     </ul>
   </div>
@@ -73,6 +74,9 @@ const { title } = Astro.props;
       padding-inline: 1rem;
     }
     .center {
+      display: none;
+    }
+    [href="#awards"] {
       display: none;
     }
   }
