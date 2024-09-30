@@ -1,6 +1,6 @@
 {
   "title": "Fire investigator ",
-  "status": 3,
+  "status": 2,
   "releasedstatus": "Filming",
   "description": [
     "In the heart of Qingdu City, a strange partnership takes shape between fire investigator Yu Tong and detective Lin Yao Yao after a string of odd fire incidents. They team up after a spontaneous combustion at a university campus, and soon, they're diving into a bunch of puzzling fire cases. With Yu Tong's special four-colour vision and Lin Yao Yao's sharp detective skills, they tackle the human dramas and social issues behind each fire they investigate.",
@@ -12,10 +12,7 @@
     "low": "../../assets/img/banner/low/banner17.webp"
   },
   "cardimages": ["/img/card/card17.webp", "/img/card/card17a.webp"],
-  "images": [
-    "../../assets/img/card/card17.webp",
-    "../../assets/img/card/card17a.webp"
-  ],
+  "images": ["../../assets/img/card/card17b.webp"],
   "rating": "",
   "isBanner": true,
   "type": 0,
