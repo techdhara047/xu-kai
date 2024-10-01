@@ -22,6 +22,12 @@
   "type": 0,
   "role": "Main Role",
   "watchlinks": [],
+  "trailers": [
+    {
+      "name": "Watch Trailer",
+      "url": "https://www.youtube.com/watch?v=iYkgw7pFBxc"
+    }
+  ],
   "casts": [
     {
       "name": "Bai Lu",

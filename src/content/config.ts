@@ -20,6 +20,14 @@ const filmographyCollection = defineCollection({
       cardimages: z.array(z.string()).optional(),
       images: z.array(image()).optional(),
       role: z.string().optional(),
+      trailers: z
+        .array(
+          z.object({
+            name: z.string().optional(),
+            url: z.string().optional(),
+          }),
+        )
+        .optional(),
       banner: z.object({
         high: image(),
       }),
