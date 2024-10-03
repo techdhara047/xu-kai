@@ -1,6 +1,6 @@
 # XU Kai Chinese Actor
 
-An website for Xu kai's filmography.
+A website for Xu kai's filmography.
 
 <img src='./screenshots/1.png'>
 <img src='./screenshots/2.png'>
