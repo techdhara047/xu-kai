@@ -1,6 +1,6 @@
 {
   "title": "Great Escape Season 6 ",
-  "status": 1,
+  "status": 0,
   "releasedstatus": "2024-07-31",
   "description": [
     "This season, the 'Great Escape Team' will set up a 'Special Event Investigation Team' and recruit 6 'superpowered' members to incarnate different story characters, exploring the 6 fantasy legends of the Escape Planet, and uncovering the bizarre truth hidden in the fog. This season will root the theme in reality and deeply explore urban legends and supernatural mysteries. Players will enter the life-like maze of fear, going deeper and deeper and fully demonstrating the wisdom and courage of the group. The newly upgraded open gameplay will not only allow players to achieve personal breakthroughs and growth, but will also bring unexpected surprises.",
@@ -14,7 +14,7 @@
   "cardimages": ["/img/card/card18.webp", "/img/card/card18a.webp"],
   "images": ["../../assets/img/card/vshow/v01.webp"],
   "isBanner": true,
-  "rating": "8.3",
+  "rating": "7.9",
   "type": 2,
   "episodes": 12,
   "role": "Regular Member",
