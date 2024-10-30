@@ -49,7 +49,7 @@ const year = getYearFromDate(item.data.releasedstatus);
       <a href={"/filmography/" + slugify(item.data.title)}
         ><h4>
           {item.data.title}
-          {year}
+          {year.length > 0 && "(" + year + ")"}
         </h4></a
       >
       {
