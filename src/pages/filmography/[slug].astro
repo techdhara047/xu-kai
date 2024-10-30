@@ -46,8 +46,11 @@ const year = getYearFromDate(item.data.releasedstatus);
 <Layout title="Filmography" isHome={false}>
   <div class="container">
     <div class="main">
-      <a href={slugify(item.data.title)}
-        ><h4>{item.data.title} {year.length > 0 ? `(year)` : ""}</h4></a
+      <a href={"/filmography/" + slugify(item.data.title)}
+        ><h4>
+          {item.data.title}
+          {year}
+        </h4></a
       >
       {
         !slug.includes("trailer") && (
@@ -81,7 +84,12 @@ const year = getYearFromDate(item.data.releasedstatus);
           {
             item.data.trailers?.map((t, i) => (
               <a
-                href={slugify(item.data.title) + "-trailer" + (i + 1)}
+                href={
+                  "/filmography/" +
+                  slugify(item.data.title) +
+                  "-trailer" +
+                  (i + 1)
+                }
                 class={index === i ? "active" : ""}
               >
                 {t.name}
