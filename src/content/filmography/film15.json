@@ -25,12 +25,14 @@
   "trailers": [
     {
       "name": "Watch Trailer",
-      "url": "https://www.youtube.com/watch?v=iYkgw7pFBxc"
+      "url": "https://www.youtube.com/watch?v=iYkgw7pFBxc",
+      "embed": "https://www.youtube.com/embed/muEGqmugPR4?si=7CJA3DcGv8ytl0Zh"
     },
     {
       "name": "Watch Trailer (Eng Sub)",
-      "url": "https://www.youtube.com/watch?v=PpjNSC5QKAo"
-    }   
+      "url": "https://www.youtube.com/watch?v=PpjNSC5QKAo",
+      "embed": "https://www.youtube.com/embed/PpjNSC5QKAo?si=4PY_PoYqSJvuxzrW"
+    }
   ],
   "casts": [
     {

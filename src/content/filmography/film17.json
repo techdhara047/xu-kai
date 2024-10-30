@@ -1,5 +1,5 @@
 {
-  "title": "Fire investigator ",
+  "title": "Fire Investigator ",
   "status": 2,
   "releasedstatus": "Filming",
   "description": [
@@ -20,8 +20,9 @@
   "role": "Main Role",
   "trailers": [
     {
-      "name": "Watch Teaser",
-      "url": "https://www.youtube.com/watch?v=7ReJOJFQdIo"
+      "name": "Watch Trailer (Eng Sub)",
+      "url": "https://www.youtube.com/watch?v=7ReJOJFQdIo",
+      "embed": "https://www.youtube.com/embed/7ReJOJFQdIo?si=F6_0blzHELS8IT1O"
     }
   ],
   "watchlinks": [],

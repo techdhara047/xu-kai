@@ -1,7 +1,7 @@
 export function getYearFromDate(dateStr: string): string {
   const date = new Date(dateStr);
   if (isNaN(date.getTime())) {
-    return "Unknown";
+    return "";
   }
   return date.getFullYear() + "";
 }
@@ -45,4 +45,11 @@ export function sortedArray(array: any) {
     }
     return 0; // If they are equal
   });
+}
+
+export function getYouTubeVideoId(url: string): string {
+  const regex =
+    /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?|watch)?[\/\?]?([^\/\n\s]+)|.*[?&]v=)|youtu\.be\/([^\/\n\s]+))/;
+  const matches = url.match(regex);
+  return matches && (matches[1] || matches[2]) ? matches[1] || matches[2] : "";
 }

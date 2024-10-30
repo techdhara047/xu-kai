@@ -3,18 +3,42 @@ import { getCollection } from "astro:content";
 import Layout from "../../layout/layout.astro";
 import CardItem from "../../components/CardItem.astro";
 
-import { getYearFromDate, slugify } from "../../utils/utils.ts";
+import {
+  getYearFromDate,
+  slugify,
+  getYouTubeVideoId,
+} from "../../utils/utils.ts";
 import { Image } from "astro:assets";
 import { Status } from "../../utils/constants";
+
 export async function getStaticPaths() {
   const items = await getCollection("filmography");
-  return items.map((item) => ({
-    params: { slug: slugify(item.data.title) },
-    props: { item },
-  }));
+  const slugs: {
+    params: { slug: string };
+    props: { item: (typeof items)[0] };
+  }[] = [];
+
+  items.map((item) => {
+    if (item.data.trailers && item.data.trailers!.length > 0) {
+      for (var i = 0; i < item.data.trailers!.length; i++) {
+        slugs.push({
+          params: { slug: slugify(item.data.title) + "-trailer" + (i + 1) },
+          props: { item },
+        });
+      }
+    }
+    slugs.push({
+      params: { slug: slugify(item.data.title) },
+      props: { item },
+    });
+  });
+
+  return slugs;
 }
 
 const { slug } = Astro.params;
+const lastChar = slug.charAt(slug.length - 1);
+const index = isNaN(Number(lastChar)) ? NaN : Number(lastChar) - 1;
 const { item } = Astro.props;
 const year = getYearFromDate(item.data.releasedstatus);
 ---
@@ -22,21 +46,44 @@ const year = getYearFromDate(item.data.releasedstatus);
 <Layout title="Filmography" isHome={false}>
   <div class="container">
     <div class="main">
-      <h4>{item.data.title} ({year})</h4>
-      <figure>
-        <Image
-          src={item.data.banner.high}
-          widths={[240, 540, 720, item.data.banner.high.width]}
-          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${item.data.banner.high.width}px`}
-          alt={item.data.title}
-          class="image"
-        />
-      </figure>
+      <a href={slugify(item.data.title)}
+        ><h4>{item.data.title} {year.length > 0 ? `(year)` : ""}</h4></a
+      >
+      {
+        !slug.includes("trailer") && (
+          <figure>
+            <Image
+              src={item.data.banner.high}
+              widths={[240, 540, 720, item.data.banner.high.width]}
+              sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${item.data.banner.high.width}px`}
+              alt={item.data.title}
+              class="image"
+            />
+          </figure>
+        )
+      }
+      {
+        slug.includes("trailer") && (
+          <iframe
+            width="100%"
+            height="415"
+            src={item.data.trailers && item.data.trailers[index].embed}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="player"
+          />
+        )
+      }
       <div class="description">
         <div class="trailers">
           {
-            item.data.trailers?.map((t) => (
-              <a href={t.url} target="_blank">
+            item.data.trailers?.map((t, i) => (
+              <a
+                href={slugify(item.data.title) + "-trailer" + (i + 1)}
+                class={index === i ? "active" : ""}
+              >
                 {t.name}
               </a>
             ))
@@ -155,6 +202,10 @@ const year = getYearFromDate(item.data.releasedstatus);
     gap: 1rem;
     margin-top: 1.2rem;
   }
+  .active {
+    background-color: green !important;
+    color: white !important;
+  }
 
   .trailers {
     display: flex;
@@ -178,6 +229,9 @@ const year = getYearFromDate(item.data.releasedstatus);
     .container {
       flex-direction: column;
       padding-inline: 1rem;
+    }
+    .player {
+      height: 250px;
     }
   }
 </style>
