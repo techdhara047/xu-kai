@@ -67,16 +67,18 @@ const year = getYearFromDate(item.data.releasedstatus);
       }
       {
         slug.includes("trailer") && (
-          <iframe
-            width="100%"
-            height="415"
-            src={item.data.trailers && item.data.trailers[index].embed}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="player"
-          />
+          <div class="iframe-container">
+            <iframe
+              width="100%"
+              height="415"
+              src={item.data.trailers && item.data.trailers[index].embed}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="player"
+            />
+          </div>
         )
       }
       <div class="description">
@@ -233,9 +235,17 @@ const year = getYearFromDate(item.data.releasedstatus);
     background-color: green;
   }
 
-  .player {
+  .iframe-container {
     aspect-ratio: 16 / 9;
     width: 100%;
+    max-width: 100%; /* Ensures it fits within the parent container */
+    overflow: hidden;
+  }
+
+  .iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (max-width: 768px) {
@@ -246,10 +256,10 @@ const year = getYearFromDate(item.data.releasedstatus);
       flex-direction: column;
       padding-inline: 1rem;
     }
-    .player {
+    /* .player {
       width: 100%;
       height: 200px;
       min-height: 200px;
-    }
+    } */
   }
 </style>
