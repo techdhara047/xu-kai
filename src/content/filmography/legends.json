@@ -23,6 +23,16 @@
   "episodes": 56,
   "type": 0,
   "role": "Main Role",
+  "trailers": [
+    {
+      "name": "Watch Trailer (Eng Sub)",
+      "embed": "https://www.youtube.com/embed/9gKs1BPFQrs?si=-GdaLpG1IgQbnmJw"
+    },
+    {
+      "name": "OST (Playlist)",
+      "embed": "https://www.youtube.com/embed/DRnXl6u3bFg?si=Q5pqUi_KC-FEnpo6"
+    }
+  ],
   "watchlinks": [
     {
       "name": "Kisskh",

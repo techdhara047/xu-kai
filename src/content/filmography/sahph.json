@@ -21,6 +21,16 @@
   "type": 0,
   "episodes": 40,
   "role": "Main Role",
+  "trailers": [
+    {
+      "name": "Watch Trailer (Eng Sub)",
+      "embed": "https://www.youtube.com/embed/aPL2dNBIgp8?si=poUVcHrAdwWrQWyR"
+    },
+    {
+      "name": "OST (Playlist)",
+      "url": "https://www.youtube.com/playlist?list=PLLaG0k-PXfnek9NPjLJ_0GbTQF2NOjg_x"
+    }
+  ],
   "watchlinks": [
     {
       "name": "WeTV",

@@ -18,6 +18,12 @@
   "type": 2,
   "episodes": 12,
   "role": "Regular Member",
+  "trailers": [
+    {
+      "name": "Watch Trailer (Eng Sub)",
+      "embed": "https://www.youtube.com/embed/68P5OK2Rp38?si=sA7iYgqiKFJjkLpT"
+    }
+  ],
   "watchlinks": [
     {
       "name": "Youtube",

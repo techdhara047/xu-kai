@@ -21,6 +21,12 @@
   "type": 1,
   "episodes": 1,
   "role": "Support Role",
+  "trailers": [
+    {
+      "name": "Watch Trailer",
+      "embed": "https://www.youtube.com/embed/rtmMMMMyhh8?si=8j3gRb3yE2kdNKJu"
+    }
+  ],
   "watchlinks": [
     {
       "name": "iQIYI",

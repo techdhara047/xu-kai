@@ -18,6 +18,16 @@
   "type": 0,
   "episodes": 54,
   "role": "Support Role",
+  "trailers": [
+    {
+      "name": "Watch Trailer",
+      "embed": "https://www.youtube.com/embed/Az36K34zOGU?si=BVfHf9_0nKoz8QRA"
+    },
+    {
+      "name": "OST (Playlist)",
+      "url": "https://www.youtube.com/playlist?list=PLyA8dX_Lz48ag9YxmN9hnPpT_6bNfFyMH"
+    }
+  ],
   "watchlinks": [
     {
       "name": "Viki",

@@ -23,7 +23,16 @@
   "isBanner": true,
   "type": 0,
   "role": "Main Role",
-
+  "trailers": [
+    {
+      "name": "Watch Trailer (Eng Sub)",
+      "embed": "https://www.youtube.com/embed/x9trBipPPps?si=mgXsD0wE77bxcGTp"
+    },
+    {
+      "name": "OST (Playlist)",
+      "url": "https://youtube.com/playlist?list=PLLaG0k-PXfnflU8DzBx8MfV6OkHH3HnS2"
+    }
+  ],
   "watchlinks": [
     {
       "name": "WeTV",

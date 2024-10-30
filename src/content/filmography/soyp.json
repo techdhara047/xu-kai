@@ -22,6 +22,16 @@
   "type": 0,
   "episodes": 70,
   "role": "Support Role",
+  "trailers": [
+    {
+      "name": "Watch Trailer (Eng Sub)",
+      "embed": "https://www.youtube.com/embed/Z4xLnxser7s?si=jlT9Sy2reZcLafWl"
+    },
+    {
+      "name": "OST (Playlist)",
+      "url": "https://www.youtube.com/playlist?list=PLNWHBkuIl8K1rtRPgjUmQ2Dm0ean9_NUo"
+    }
+  ],
   "watchlinks": [
     {
       "name": "Kisskh",
