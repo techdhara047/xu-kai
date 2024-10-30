@@ -232,6 +232,11 @@ const year = getYearFromDate(item.data.releasedstatus);
   .trailers a:hover {
     background-color: green;
   }
+
+  .player {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (max-width: 768px) {
     .main {
@@ -240,9 +245,6 @@ const year = getYearFromDate(item.data.releasedstatus);
     .container {
       flex-direction: column;
       padding-inline: 1rem;
-    }
-    .player {
-      min-height: 230px;
     }
   }
 </style>
