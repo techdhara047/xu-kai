@@ -85,11 +85,14 @@ const year = getYearFromDate(item.data.releasedstatus);
             item.data.trailers?.map((t, i) => (
               <a
                 href={
-                  "/filmography/" +
-                  slugify(item.data.title) +
-                  "-trailer" +
-                  (i + 1)
+                  !t.embed
+                    ? t.url
+                    : "/filmography/" +
+                      slugify(item.data.title) +
+                      "-trailer" +
+                      (i + 1)
                 }
+                target={!t.embed ? "_blank" : "_self"}
                 class={index === i ? "active" : ""}
               >
                 {t.name}
