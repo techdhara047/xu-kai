@@ -234,7 +234,7 @@ const year = getYearFromDate(item.data.releasedstatus);
   }
 
   .player {
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
     width: 100%;
   }
   /* Medium devices (landscape tablets, 768px and up) */
@@ -245,6 +245,11 @@ const year = getYearFromDate(item.data.releasedstatus);
     .container {
       flex-direction: column;
       padding-inline: 1rem;
+    }
+    .player {
+      width: 100%;
+      height: 200px;
+      min-height: 200px;
     }
   }
 </style>
