@@ -21,6 +21,18 @@
   "isBanner": true,
   "episodes": 40,
   "role": "Main Role",
+  "trailers": [
+    {
+      "name": "Watch Trailer (Eng Sub)",
+      "url": "https://www.youtube.com/watch?v=_V8V1FzSQoA&t=1s",
+      "embed": "https://www.youtube.com/embed/_V8V1FzSQoA?si=JnEyqQa6XbviVpRb"
+    },
+    {
+      "name": "OST (Eng Sub)",
+      "url": "https://www.youtube.com/watch?v=xlPR7X_Ztxw",
+      "embed": "https://www.youtube.com/embed/xlPR7X_Ztxw?si=JMz7a6hl4KnfYDud"
+    }
+  ],
   "watchlinks": [
     {
       "name": "YouTube",
